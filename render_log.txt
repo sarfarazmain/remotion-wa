@@ -1,0 +1,33 @@
+Bundling 6%
+Bundling 12%
+Bundling 24%
+Bundling 65%
+Bundling 71%
+Bundling 76%
+Bundling 81%
+Bundling 87%
+Bundling 92%
+Bundling 99%
+Bundling 100%
+
+Error: Module build failed (from ./node_modules/@remotion/bundler/dist/esbuild-loader/index.js):
+Error: Transform failed with 2 errors:
+/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/src/WealthArchiveVideo/index.tsx:930:37: ERROR: The character ">" is not valid inside a JSX element
+/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/src/WealthArchiveVideo/index.tsx:933:37: ERROR: Expected ")" but found "style"
+    at failureErrorWithLog (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/esbuild/lib/main.js:1477:15)
+    at /Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/esbuild/lib/main.js:756:50
+    at responseCallbacks.<computed> (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/esbuild/lib/main.js:623:9)
+    at handleIncomingPacket (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/esbuild/lib/main.js:678:12)
+    at Socket.readFromStdout (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/esbuild/lib/main.js:601:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+undefined
+    at Object.internalBundle (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/@remotion/bundler/dist/bundle.js:178:15)
+    at async bundleOnCli (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/@remotion/cli/dist/setup-cache.js:146:21)
+    at async bundleOnCliOrTakeServeUrl (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/@remotion/cli/dist/setup-cache.js:35:21)
+    at async renderVideoFlow (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/@remotion/cli/dist/render-flows/render.js:162:53)
+    at async render (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/@remotion/cli/dist/render.js:126:5)
+    at async cli (/Users/sarfaraz/.gemini/antigravity/playground/spinning-halley/node_modules/@remotion/cli/dist/index.js:92:13)

@@ -1,0 +1,4 @@
+[33mSelected a single frame. Assuming you want to output an image.[39m
+[33mIf you want to render a video, pass a range:  '--frames=40-40'.[39m
+[33mTo dismiss this message, add the '--sequence' flag explicitly.[39m
+[31m[41m[37m ReferenceError [39m[31m[49m[39m [31mDataTicker is not defined[39m

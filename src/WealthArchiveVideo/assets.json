@@ -1,0 +1,37 @@
+{
+  "scene1_video": "/assets/processed/scene1_video.mp4",
+  "scene1_image": "https://images.pexels.com/photos/8175147/pexels-photo-8175147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene2_video": "https://videos.pexels.com/video-files/30531389/13078246_360_640_24fps.mp4",
+  "scene2_image": "https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene3_video": "https://videos.pexels.com/video-files/35873067/15213795_360_640_30fps.mp4",
+  "scene3_image": "https://images.pexels.com/photos/7947744/pexels-photo-7947744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene4_video": "https://videos.pexels.com/video-files/5767023/5767023-hd_720_1280_24fps.mp4",
+  "scene4_image": "https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene5_video": "https://videos.pexels.com/video-files/35069358/14855299_360_640_30fps.mp4",
+  "scene5_image": "https://images.pexels.com/photos/208724/pexels-photo-208724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene6_video": "https://videos.pexels.com/video-files/14863982/14863982-hd_1080_1920_25fps.mp4",
+  "scene6_image": "https://images.pexels.com/photos/35076286/pexels-photo-35076286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene7_video": "https://videos.pexels.com/video-files/17063218/17063218-hd_720_1280_24fps.mp4",
+  "scene7_image": "https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene8_video": "https://videos.pexels.com/video-files/35863230/15209135_360_640_30fps.mp4",
+  "scene8_image": "https://images.pexels.com/photos/3054252/pexels-photo-3054252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene9_video": "https://videos.pexels.com/video-files/8516366/8516366-hd_1080_1920_30fps.mp4",
+  "scene9_image": "https://images.pexels.com/photos/4386442/pexels-photo-4386442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene10_video": "https://videos.pexels.com/video-files/31112120/13293229_360_640_30fps.mp4",
+  "scene10_image": "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene11_video": "https://videos.pexels.com/video-files/6227239/6227239-hd_1080_1920_29fps.mp4",
+  "scene11_image": "https://images.pexels.com/photos/266436/pexels-photo-266436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+
+  "scene12_video": "https://videos.pexels.com/video-files/34692310/14704403_360_640_30fps.mp4",
+  "scene12_image": "https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+}
