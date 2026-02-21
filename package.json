@@ -21,6 +21,7 @@
     "@remotion/eslint-config-flat": "4.0.424",
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
+    "dotenv": "^17.3.1",
     "eslint": "9.19.0",
     "prettier": "3.6.0",
     "typescript": "5.9.3"

@@ -1,7 +1,15 @@
+require('dotenv').config();
 const fs = require('fs');
 const https = require('https');
 
-const API_KEY = "CnYjcJlSLgCwP1Ch1IUfIs4Wh64iXMQ71iCJwiYqArBvqKEH4WPBCrQm";
+// Load API key from environment variable
+const API_KEY = process.env.PEXELS_API_KEY;
+
+if (!API_KEY) {
+    console.error('Error: PEXELS_API_KEY environment variable is not set.');
+    console.error('Please create a .env file with: PEXELS_API_KEY=your_api_key');
+    process.exit(1);
+}
 
 // Queries based on DocumentaryVideo scenes
 const QUERY_MAP = {
