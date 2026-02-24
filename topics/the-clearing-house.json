@@ -1,0 +1,612 @@
+{
+  "meta": {
+    "title": "The Clearing House",
+    "slug": "the-clearing-house",
+    "archetype": "HIDDEN_MECHANISM"
+  },
+  "narration": "Modern finance is a game of trust. But trust is a friction. The real engine of wealth isn't the trade. It is the clearing. In 1853, fifty-two banks in New York were drowning in their own gold. Porters walked miles daily just to settle individual debts between branches. It was slow. It was dangerous. It was an 18th-century bottleneck. Then came the Clearing House. A single room where all debts met. They didn't move the gold. They just moved the numbers. By netting the totals, they reduced physical gold movement by ninety-five percent. Efficiency created the first true network effect in American banking. Today, this 'invisible plumbing' settles two trillion dollars every single day. The winner isn't the one with the most gold. It\u2019s the one who controls the ledger.",
+  "bgm": {
+    "trackId": "bgm_dark_high_drone_01"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "narration": "Modern finance is a game of trust.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Game of",
+            "size": 72,
+            "color": "CREAM"
+          },
+          {
+            "text": "TRUST",
+            "size": 120,
+            "color": "GOLD"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "pexelsVideoQuery": "gold coins stacking slow motion dark shadows",
+      "pexelsImageQuery": "antique gold coins wall street texture",
+      "heroWord": "trust",
+      "connectiveWord": "IS",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 001 \u2014 THE ILLUSION",
+        "citation": "The Clearing House, 1853"
+      }
+    },
+    {
+      "index": 2,
+      "narration": "But trust is a friction. The real engine of wealth isn't the trade.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "TRUST",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          },
+          {
+            "text": "IS FRICTION",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "BOLD",
+            "color": "CREAM_DIM"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 10
+      },
+      "declaration": {
+        "lines": [
+          {
+            "text": "Not the trade.",
+            "size": 64,
+            "color": "CREAM_FAINT"
+          }
+        ],
+        "lineStagger": 8
+      },
+      "pexelsVideoQuery": "gears grinding rust dark industrial slow",
+      "pexelsImageQuery": "broken chain links metal friction closeup",
+      "heroWord": "friction",
+      "microReset": {
+        "type": "REDACTION_REVEAL",
+        "label": "THE FRICTION"
+      },
+      "source": {
+        "classification": "EXHIBIT 002 \u2014 THE MYTH",
+        "citation": "NY Clearing House History, 1853"
+      }
+    },
+    {
+      "index": 3,
+      "narration": "It is the clearing.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "THE CLEARING",
+            "type": "HERO",
+            "animation": "REDACTION",
+            "weight": "BLACK",
+            "color": "GOLD"
+          }
+        ],
+        "align": "center",
+        "stagger": 12
+      },
+      "pexelsVideoQuery": "ink flowing paper ledger dark macro",
+      "pexelsImageQuery": "old ledger book numbers close up texture",
+      "heroWord": "clearing",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 003 \u2014 THE ENGINE",
+        "citation": "Wikipedia: The Clearing House"
+      }
+    },
+    {
+      "index": 4,
+      "narration": "In 1853, fifty-two banks in New York were drowning in their own gold.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          {
+            "text": "52 BANKS",
+            "size": 88,
+            "color": "OXBLOOD"
+          },
+          {
+            "text": "Drowning in Gold",
+            "size": 64,
+            "color": "CREAM_DIM"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "NY Banks (1849-1853)",
+        "color": "GOLD",
+        "highlightLast": true,
+        "data": [
+          {
+            "label": "1849",
+            "value": 24
+          },
+          {
+            "label": "1850",
+            "value": 30
+          },
+          {
+            "label": "1851",
+            "value": 38
+          },
+          {
+            "label": "1852",
+            "value": 45
+          },
+          {
+            "label": "1853",
+            "value": 57
+          }
+        ]
+      },
+      "pexelsVideoQuery": "gold coins pouring overflow dark vault",
+      "pexelsImageQuery": "wall street 1850s historical photo",
+      "heroWord": "drowning",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "chart-1853"
+      },
+      "source": {
+        "classification": "EXHIBIT 004 \u2014 THE CRISIS",
+        "citation": "Source: NY Clearing House, 1853"
+      }
+    },
+    {
+      "index": 5,
+      "narration": "Porters walked miles daily just to settle individual debts between branches.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "STOP_MOTION",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Porters",
+            "size": 72,
+            "color": "CREAM"
+          },
+          {
+            "text": "Walked Miles",
+            "size": 88,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "evidence": {
+        "type": "VERDICT_CARD",
+        "leftLabel": "Before",
+        "leftItems": [
+          "Porters Exchange",
+          "Bags of Coin",
+          "Daily Chaos"
+        ],
+        "rightLabel": "Reality",
+        "rightItems": [
+          "Miles Walked",
+          "Errors",
+          "Danger"
+        ]
+      },
+      "pexelsVideoQuery": "men carrying heavy sacks streets 19th century",
+      "pexelsImageQuery": "porter carrying gold sack old photo",
+      "heroWord": "miles",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "right-panel"
+      },
+      "source": {
+        "classification": "EXHIBIT 005 \u2014 PORTERS' EXCHANGE",
+        "citation": "Source: Wikipedia, 1853 History"
+      }
+    },
+    {
+      "index": 6,
+      "narration": "It was slow. It was dangerous. It was an 18th-century bottleneck.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "SLOW",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "CREAM_DIM"
+          },
+          {
+            "text": "DANGEROUS",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          },
+          {
+            "text": "BOTTLENECK",
+            "type": "HERO",
+            "animation": "REDACTION",
+            "weight": "BOLD",
+            "color": "GOLD"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "pexelsVideoQuery": "crowded street chaos horses wagons dark",
+      "pexelsImageQuery": "bottleneck traffic old city engraving",
+      "heroWord": "bottleneck",
+      "microReset": {
+        "type": "REDACTION_REVEAL",
+        "label": "18TH CENTURY"
+      },
+      "source": {
+        "classification": "EXHIBIT 006 \u2014 THE BOTTLENECK",
+        "citation": "DaytoninManhattan, 1853"
+      }
+    },
+    {
+      "index": 7,
+      "narration": "Then came the Clearing House. A single room where all debts met.",
+      "heroType": "HERO_VIDEO",
+      "environment": "IMMERSIVE_BLEED",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "THE",
+            "size": 64,
+            "color": "CREAM_DIM"
+          },
+          {
+            "text": "CLEARING HOUSE",
+            "size": 96,
+            "color": "GOLD"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "pexelsVideoQuery": "old basement room clerks papers dim light",
+      "pexelsImageQuery": "14 wall street 1853 historical building",
+      "heroWord": "Clearing",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 007 \u2014 THE BIRTH",
+        "citation": "October 11, 1853"
+      }
+    },
+    {
+      "index": 8,
+      "narration": "They didn't move the gold. They just moved the numbers.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "OFFSET_STACK",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "NO GOLD",
+            "type": "HERO",
+            "animation": "SLIDE",
+            "weight": "LIGHT",
+            "color": "CREAM_FAINT"
+          },
+          {
+            "text": "JUST NUMBERS",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          }
+        ],
+        "align": "center",
+        "stagger": 10
+      },
+      "pexelsVideoQuery": "numbers calculating ledger pen ink dark",
+      "pexelsImageQuery": "abacus beads wood antique close up",
+      "heroWord": "numbers",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 008 \u2014 NETTING",
+        "citation": "First Day: $22.6M"
+      }
+    },
+    {
+      "index": 9,
+      "narration": "By netting the totals, they reduced physical gold movement by ninety-five percent.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Gold Movement",
+            "size": 72,
+            "color": "GOLD"
+          },
+          {
+            "text": "Reduced 95%",
+            "size": 88,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "Clearing House Impact (%)",
+        "yUnit": "%",
+        "color": "GOLD",
+        "data": [
+          {
+            "label": "Before",
+            "value": 100
+          },
+          {
+            "label": "After",
+            "value": 5,
+            "sublabel": "95% \u2193"
+          }
+        ]
+      },
+      "pexelsVideoQuery": "gold bars stacking minimal dark motion",
+      "pexelsImageQuery": "gold vault empty shelves industrial",
+      "heroWord": "reduced",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "chart-After"
+      },
+      "source": {
+        "classification": "EXHIBIT 009 \u2014 EFFICIENCY",
+        "citation": "Source: Clearing House Records"
+      }
+    },
+    {
+      "index": 10,
+      "narration": "Efficiency created the first true network effect in American banking.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "SIGNAL_GRID",
+      "layout": "FULL_BLEED",
+      "physics": "STOP_MOTION",
+      "declaration": {
+        "lines": [
+          {
+            "text": "NETWORK",
+            "size": 96,
+            "color": "GOLD"
+          },
+          {
+            "text": "EFFECT",
+            "size": 72,
+            "color": "CREAM_DIM"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "evidence": {
+        "type": "FLOW_ARROW",
+        "fromLabel": "52 BANKS",
+        "toLabel": "ONE LEDGER",
+        "throughLabel": "NETTING"
+      },
+      "pexelsVideoQuery": "network nodes connecting digital dark",
+      "pexelsImageQuery": "bank vault interconnected chains",
+      "heroWord": "network",
+      "microReset": {
+        "type": "REDACTION_REVEAL",
+        "label": "FIRST NETWORK"
+      },
+      "source": {
+        "classification": "EXHIBIT 010 \u2014 NETWORK EFFECT",
+        "citation": "Source: JSTOR, 1853"
+      }
+    },
+    {
+      "index": 11,
+      "narration": "Today, this 'invisible plumbing' settles two trillion dollars every single day.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          {
+            "text": "$2 TRILLION",
+            "size": 100,
+            "color": "OXBLOOD"
+          },
+          {
+            "text": "Daily",
+            "size": 64,
+            "color": "CREAM"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "Daily Clearing Volume ($M)",
+        "lineLabel": "VOLUME",
+        "color": "GOLD",
+        "data": [
+          {
+            "label": "1853",
+            "value": 22.6
+          },
+          {
+            "label": "1873",
+            "value": 100
+          },
+          {
+            "label": "1900",
+            "value": 500
+          },
+          {
+            "label": "1950",
+            "value": 5000
+          },
+          {
+            "label": "2000",
+            "value": 1000000
+          },
+          {
+            "label": "2024",
+            "value": 2000000
+          }
+        ],
+        "highlightLast": true
+      },
+      "dataTicker": {
+        "from": 0,
+        "to": 2000000,
+        "prefix": "$",
+        "suffix": "T Daily",
+        "decimals": 0,
+        "label": "Invisible Plumbing",
+        "color": "GOLD"
+      },
+      "pexelsVideoQuery": "digital money transfer wires abstract dark",
+      "pexelsImageQuery": "server room blinking lights financial",
+      "heroWord": "trillion",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "chart-2024"
+      },
+      "source": {
+        "classification": "EXHIBIT 011 \u2014 TODAY",
+        "citation": "Source: TheClearingHouse.org, 2024"
+      }
+    },
+    {
+      "index": 12,
+      "narration": "The winner isn't the one with the most gold. It\u2019s the one who controls the ledger.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Controls",
+            "size": 72,
+            "color": "CREAM_DIM"
+          },
+          {
+            "text": "THE LEDGER",
+            "size": 120,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 14
+      },
+      "pexelsVideoQuery": "giant ledger book opening shadows dramatic",
+      "pexelsImageQuery": "massive ledger pages numbers infinity",
+      "heroWord": "ledger",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "CLASSIFIED \u2014 FINAL VERDICT",
+        "citation": "The Real Engine of Wealth"
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": 1,
+      "to": 2,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "type": "Z_AXIS_PORTAL"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "type": "INFINITE_DESK_DOWN"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "type": "INFINITE_DESK_RIGHT"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "type": "INK_BLEED"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "type": "INFINITE_DESK_DOWN"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "type": "FLASHBULB"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "type": "Z_AXIS_PORTAL"
+    }
+  ]
+}

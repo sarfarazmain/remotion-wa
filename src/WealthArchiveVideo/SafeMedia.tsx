@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NoisePlaceholder } from "./NoisePlaceholder";
 
-import { staticFile, Video, Img } from "remotion";
+import { staticFile, OffthreadVideo } from "remotion";
 
 interface Props {
     src?: string;
@@ -18,7 +18,7 @@ export const SafeMedia: React.FC<Props> = ({
     className,
     objectFit = "cover",
     placeholderOpacity = 0.2,
-    videoProps
+    // videoProps not used with OffthreadVideo — kept in interface for compat
 }) => {
     const [hasError, setHasError] = useState(false);
 
@@ -39,34 +39,42 @@ export const SafeMedia: React.FC<Props> = ({
         ...style,
     };
 
-    // If the src starts with /, it's a local public asset, wrap in staticFile
-    const finalSrc = src.startsWith("/") ? staticFile(src) : src;
+    // If the src starts with / or doesn't start with http, it's a local public asset
+    // Strip leading slash before calling staticFile (Remotion serves public/ at root)
+    const isLocal =
+        src.startsWith("/") ||
+        (!src.startsWith("http://") &&
+            !src.startsWith("https://") &&
+            !src.startsWith("blob:"));
+    const finalSrc = isLocal ? staticFile(src.replace(/^\//, "")) : src;
 
     if (isVideo) {
+        // OffthreadVideo renders each frame as a still via ffmpeg — no delayRender stall.
+        // Note: OffthreadVideo does NOT support loop prop; it loops by wrapping time to video duration.
         return (
-            <Video
+            <OffthreadVideo
                 src={finalSrc}
                 style={commonStyle}
                 className={className}
-                autoPlay
-                loop
                 muted
-                onError={(e) => {
-                    console.warn(`SafeMedia: Failed to load video ${finalSrc}`, e);
+                onError={() => {
+                    console.warn(`SafeMedia: Failed to load video ${finalSrc}`);
                     setHasError(true);
                 }}
-                {...(videoProps as any)}
             />
         );
     }
 
+    // Plain <img> — no delayRender needed. Remotion's OffthreadVideo-based renderer
+    // extracts frames via ffmpeg so images are loaded by the headless browser naturally.
+    // If an image fails, show the NoisePlaceholder fallback instead of crashing the render.
     return (
-        <Img
+        <img
             src={finalSrc}
             style={commonStyle}
             className={className}
-            onError={(e) => {
-                console.warn(`SafeMedia: Failed to load image ${finalSrc}`, e);
+            onError={() => {
+                console.warn(`SafeMedia: Failed to load image ${finalSrc}`);
                 setHasError(true);
             }}
         />

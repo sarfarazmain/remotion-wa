@@ -1,0 +1,65 @@
+{
+  "STOMP_IMPACT": {
+    "file": "topics/the-clearing-house/sfx/STOMP_IMPACT.mp3",
+    "freesoundId": 648729,
+    "name": "Cinematic Woosh SFX-010.wav",
+    "duration": 1.752,
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "volume": 0.6,
+    "onsetSec": 0.452979
+  },
+  "REDACTION_REVEAL": {
+    "file": "topics/the-clearing-house/sfx/REDACTION_REVEAL.mp3",
+    "freesoundId": 212747,
+    "name": "Oshiire.mp3",
+    "duration": 2.66498,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "volume": 0.4,
+    "onsetSec": 0.444979
+  },
+  "CHART_DRAW": {
+    "file": "topics/the-clearing-house/sfx/CHART_DRAW.mp3",
+    "freesoundId": 632477,
+    "name": "Pencil writing on paper (4 strokes)",
+    "duration": 0.633401,
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "volume": 0.3,
+    "onsetSec": 0.0543311
+  },
+  "HIGHLIGHTER_CIRCLE": {
+    "file": "topics/the-clearing-house/sfx/HIGHLIGHTER_CIRCLE.mp3",
+    "freesoundId": 761665,
+    "name": "Pencil Scribble (9)",
+    "duration": 0.412542,
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "volume": 0.35,
+    "onsetSec": 0.0720417
+  },
+  "Z_AXIS_SWOOSH": {
+    "file": "topics/the-clearing-house/sfx/Z_AXIS_SWOOSH.mp3",
+    "freesoundId": 754771,
+    "name": "Riser Hit sfx 097",
+    "duration": 2.52267,
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "volume": 0.5,
+    "onsetSec": 0.589771
+  },
+  "INK_BLEED": {
+    "file": "topics/the-clearing-house/sfx/INK_BLEED.mp3",
+    "freesoundId": 337481,
+    "name": "suck_drip_short_2.wav",
+    "duration": 0.293521,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "volume": 0.35,
+    "onsetSec": 0.149708
+  },
+  "FLASHBULB_SHUTTER": {
+    "file": "topics/the-clearing-house/sfx/FLASHBULB_SHUTTER.mp3",
+    "freesoundId": 693869,
+    "name": "35mm Film Camera Shutter With Motorised Winder (3)",
+    "duration": 0.881938,
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "volume": 0.55,
+    "onsetSec": 0.0455
+  }
+}

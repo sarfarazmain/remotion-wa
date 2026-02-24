@@ -27,6 +27,103 @@ import { PACING, getHoldEvolveTriggers } from "./PacingEngine";
 
 export type MicroResetType = "Z_PUNCH_IN" | "REDACTION_REVEAL" | "HIGHLIGHTER";
 
+/** Resolved highlighter ellipse coordinates */
+export interface HighlighterCoords {
+    cx: number;
+    cy: number;
+    rx: number;
+    ry: number;
+}
+
+/**
+ * Resolve a targetElement string to absolute canvas coordinates for the
+ * highlighter ellipse. This maps semantic target names from topic JSON
+ * (e.g., "chart-2020", "chart-USA", "right-panel", "CAPEX") to precise
+ * {cx, cy, rx, ry} values on the 1080×1920 canvas.
+ *
+ * Layout reference (DATA_VICE / chart scenes):
+ *   - SAFE_BOX: left=86, top=288, width=778, height=1152
+ *   - Content stacks from bottom: Declaration text → Chart
+ *   - Chart card: 780×460, centered at ~(476, 1160) in canvas space
+ *   - Chart plotting area: padL=72, padR=40, padT=52, padB=60 within card
+ *
+ * For BAR charts with 5 bars (barGap = cW/5, barW ≈ 0.58*barGap):
+ *   - Bar i center-x = chartLeft + padL + i * barGap + barGap/2
+ *
+ * For LINE charts with 7 points:
+ *   - Point i x = chartLeft + padL + (i / 6) * cW
+ */
+function resolveHighlighterTarget(target?: string): HighlighterCoords | null {
+    if (!target) return null;
+
+    // ── CHART DATA POINT TARGETS ──────────────────────────────────────────
+    // Chart card absolute position on canvas (DATA_VICE layout, flex-end stacking)
+    // Declaration ~200px + chart 460px within SAFE_BOX height 1152, from top=288
+    // Chart top ≈ 288 + 1152 - 460 = 980, chart center-y ≈ 1210
+    const chartLeft = 86;    // SAFE_BOX.left
+    const chartTop = 980;    // Approximate top of chart card in canvas
+    const chartW = 780;
+    const padL = 72, padR = 40, padT = 52, padB = 60;
+    const cW = chartW - padL - padR; // 668
+    const cH = 460 - padT - padB;    // 348
+
+    // LINE chart data point targets (7 data points, 0-indexed)
+    const linePointX = (i: number, count: number) =>
+        chartLeft + padL + (i / (count - 1)) * cW;
+
+    // BAR chart targets (5 bars for G7 data)
+    const barCenterX = (i: number, count: number) => {
+        const barGap = Math.floor(cW / count);
+        return chartLeft + padL + i * barGap + barGap / 2;
+    };
+
+    switch (target) {
+        // ── S6: LINE chart "US Debt-to-GDP" — highlight 2020 spike (index 4 of 7)
+        case "chart-2020":
+            return {
+                cx: linePointX(4, 7),
+                cy: chartTop + padT + cH * 0.2,  // 127% — near top of chart
+                rx: 70,
+                ry: 50,
+            };
+
+        // ── S9: BAR chart "G7 Debt-to-GDP" — highlight USA bar (index 2 of 5)
+        case "chart-USA":
+            return {
+                cx: barCenterX(2, 5),
+                cy: chartTop + padT + cH * 0.45,  // Mid-height of bar area
+                rx: 65,
+                ry: 100,
+            };
+
+        // ── S5: VERDICT_CARD — highlight right panel ("Now" column)
+        // Verdict card: two equal columns, right panel center ≈ 75% of SAFE_BOX width
+        case "right-panel":
+            return {
+                cx: 86 + 778 * 0.73,  // Right column center
+                cy: 288 + 1152 * 0.65, // Mid-height of evidence area
+                rx: 180,
+                ry: 140,
+            };
+
+        // ── S11: STAT_LINES — highlight CAPEX row (last of 4 stat lines)
+        // Stat lines stack after declaration, each ~50px tall
+        // Declaration ≈ top 200px of SAFE_BOX, stats below
+        case "CAPEX":
+            return {
+                cx: 86 + 778 * 0.5,    // Centered
+                cy: 288 + 1152 * 0.68,  // 4th stat row approximate Y
+                rx: 260,
+                ry: 40,
+            };
+
+        default:
+            // Unknown target — return null (no highlighter rendered)
+            console.warn(`[WARP] Unknown highlighter target: "${target}". No ellipse rendered.`);
+            return null;
+    }
+}
+
 interface MicroAnimationResetProps {
     type: MicroResetType;
     localFrame: number;
@@ -36,6 +133,8 @@ interface MicroAnimationResetProps {
     duration: number;
     /** Optional: highlight label text for REDACTION_REVEAL */
     revealLabel?: string;
+    /** Optional: semantic target element for HIGHLIGHTER positioning */
+    highlighterTarget?: string;
 }
 
 /**
@@ -287,6 +386,7 @@ export const MicroAnimationReset: React.FC<MicroAnimationResetProps> = ({
     triggerAt = PACING.HOLD_EVOLVE_AT,
     duration,
     revealLabel,
+    highlighterTarget,
 }) => {
     // Only activate if scene is long enough to need the reset
     if (duration <= PACING.HOLD_EVOLVE_AT) return null;
@@ -295,12 +395,30 @@ export const MicroAnimationReset: React.FC<MicroAnimationResetProps> = ({
     const triggers = getHoldEvolveTriggers(duration);
     if (triggers.length === 0) return null;
 
+    // Resolve highlighter coordinates from targetElement
+    const hlCoords = type === "HIGHLIGHTER"
+        ? resolveHighlighterTarget(highlighterTarget)
+        : null;
+
     const renderReset = (t: number, key: number) => {
         switch (type) {
             case "REDACTION_REVEAL":
                 return <RedactionReveal key={key} localFrame={localFrame} triggerAt={t} label={revealLabel} />;
             case "HIGHLIGHTER":
-                return <HighlighterCircle key={key} localFrame={localFrame} triggerAt={t} />;
+                // If no valid target resolved, skip rendering the circle entirely
+                // (SOP: HIGHLIGHTER without a valid target is a no-op, not a default)
+                if (!hlCoords) return null;
+                return (
+                    <HighlighterCircle
+                        key={key}
+                        localFrame={localFrame}
+                        triggerAt={t}
+                        cx={hlCoords.cx}
+                        cy={hlCoords.cy}
+                        rx={hlCoords.rx}
+                        ry={hlCoords.ry}
+                    />
+                );
             case "Z_PUNCH_IN":
             default:
                 return <ZPunchIn key={key} localFrame={localFrame} triggerAt={t} />;

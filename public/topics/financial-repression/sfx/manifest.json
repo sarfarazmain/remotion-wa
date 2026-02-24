@@ -1,0 +1,65 @@
+{
+  "STOMP_IMPACT": {
+    "file": "topics/financial-repression/sfx/STOMP_IMPACT.mp3",
+    "freesoundId": 0,
+    "name": "cached",
+    "duration": 0,
+    "license": "cached",
+    "volume": 0.6,
+    "onsetSec": 0.452979
+  },
+  "REDACTION_REVEAL": {
+    "file": "topics/financial-repression/sfx/REDACTION_REVEAL.mp3",
+    "freesoundId": 0,
+    "name": "cached",
+    "duration": 0,
+    "license": "cached",
+    "volume": 0.4,
+    "onsetSec": 0.444979
+  },
+  "HIGHLIGHTER_CIRCLE": {
+    "file": "topics/financial-repression/sfx/HIGHLIGHTER_CIRCLE.mp3",
+    "freesoundId": 0,
+    "name": "cached",
+    "duration": 0,
+    "license": "cached",
+    "volume": 0.35,
+    "onsetSec": 0.0720417
+  },
+  "CHART_DRAW": {
+    "file": "topics/financial-repression/sfx/CHART_DRAW.mp3",
+    "freesoundId": 0,
+    "name": "cached",
+    "duration": 0,
+    "license": "cached",
+    "volume": 0.3,
+    "onsetSec": 0.0543311
+  },
+  "Z_AXIS_SWOOSH": {
+    "file": "topics/financial-repression/sfx/Z_AXIS_SWOOSH.mp3",
+    "freesoundId": 0,
+    "name": "cached",
+    "duration": 0,
+    "license": "cached",
+    "volume": 0.5,
+    "onsetSec": 0.589771
+  },
+  "INK_BLEED": {
+    "file": "topics/financial-repression/sfx/INK_BLEED.mp3",
+    "freesoundId": 0,
+    "name": "cached",
+    "duration": 0,
+    "license": "cached",
+    "volume": 0.35,
+    "onsetSec": 0.149708
+  },
+  "FLASHBULB_SHUTTER": {
+    "file": "topics/financial-repression/sfx/FLASHBULB_SHUTTER.mp3",
+    "freesoundId": 0,
+    "name": "cached",
+    "duration": 0,
+    "license": "cached",
+    "volume": 0.55,
+    "onsetSec": 0.0455
+  }
+}

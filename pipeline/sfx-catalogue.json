@@ -1,0 +1,46 @@
+{
+  "sfx_events": {
+    "STOMP_IMPACT": {
+      "query": "sub bass impact boom cinematic",
+      "filter": "duration:[0.2 TO 2.0]",
+      "volume": 0.6,
+      "description": "Heavy sub-bass boom for text STOMP/SLAM"
+    },
+    "HIGHLIGHTER_CIRCLE": {
+      "query": "marker pen paper writing",
+      "filter": "duration:[0.3 TO 2.0]",
+      "volume": 0.35,
+      "description": "Thick marker on paper for Highlighter ellipse"
+    },
+    "Z_AXIS_SWOOSH": {
+      "query": "cinematic whoosh",
+      "filter": "duration:[0.3 TO 3.0]",
+      "volume": 0.5,
+      "description": "Low-freq cinematic swoosh for Z-Axis Portal"
+    },
+    "FLASHBULB_SHUTTER": {
+      "query": "vintage camera shutter click",
+      "filter": "duration:[0.1 TO 1.5]",
+      "volume": 0.55,
+      "description": "Physical vintage camera shutter"
+    },
+    "REDACTION_REVEAL": {
+      "query": "paper slide",
+      "filter": "duration:[0.2 TO 3.0]",
+      "volume": 0.4,
+      "description": "Heavy file folder opening for Redaction Reveal"
+    },
+    "INK_BLEED": {
+      "query": "liquid drip",
+      "filter": "duration:[0.2 TO 3.0]",
+      "volume": 0.35,
+      "description": "Wet ink spread for Ink Bleed transition"
+    },
+    "CHART_DRAW": {
+      "query": "pen writing scratch",
+      "filter": "duration:[0.3 TO 4.0]",
+      "volume": 0.3,
+      "description": "Pen scratch for chart line drawing"
+    }
+  }
+}

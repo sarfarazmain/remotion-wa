@@ -1,0 +1,155 @@
+{
+  "master_bgm_catalogue": [
+    {
+      "category": "DARK_TENSION",
+      "description": "Used for failure, fraud, risk, and tragic mistakes.",
+      "tracks": [
+        {
+          "id": "bgm_dark_high_slow_01",
+          "mood": "ominous, heavy, tragic, finality",
+          "tempo": "slow",
+          "archetype": "The Crash",
+          "use_case_depth": "Use for total collapse moments: bankruptcy, shutdowns, irreversible failure."
+        },
+        {
+          "id": "bgm_dark_high_drone_02",
+          "mood": "unsettling, suspenseful, deep, waiting",
+          "tempo": "slow",
+          "archetype": "The Trap",
+          "use_case_depth": "Use during bad decisions or looming consequences."
+        },
+        {
+          "id": "bgm_dark_high_minimal_01",
+          "mood": "cold, sharp, analytical",
+          "tempo": "mid",
+          "archetype": "The Cold Fact",
+          "use_case_depth": "Ideal for cold hooks or brutal facts."
+        },
+        {
+          "id": "bgm_dark_high_drone_01",
+          "mood": "eerie, looming, subconscious fear",
+          "tempo": "slow",
+          "archetype": "The Shadow",
+          "use_case_depth": "Use for hidden problems, ignored warnings, quiet danger."
+        },
+        {
+          "id": "bgm_dark_high_pulse_01",
+          "mood": "urgent, anxious, pressure",
+          "tempo": "fast",
+          "archetype": "The Panic",
+          "use_case_depth": "Use for moments where time is running out."
+        },
+        {
+          "id": "bgm_neutral_mid_slow_01",
+          "mood": "brooding, deliberate, weighted",
+          "tempo": "slow",
+          "archetype": "The Reckoning",
+          "use_case_depth": "Use for slow reveals, uncomfortable truths unfolding gradually."
+        }
+      ]
+    },
+    {
+      "category": "NEUTRAL_MOTION",
+      "description": "Used for building, working, progress, and neutral explanation.",
+      "tracks": [
+        {
+          "id": "bgm_neutral_mid_fast_01",
+          "mood": "procedural, corporate, momentum",
+          "tempo": "fast",
+          "archetype": "The Scaling Phase",
+          "use_case_depth": "Company growth, expansion, execution."
+        },
+        {
+          "id": "bgm_neutral_mid_minimal_02",
+          "mood": "curious, light, questioning",
+          "tempo": "mid",
+          "archetype": "The Idea",
+          "use_case_depth": "Hooks that introduce a mystery or idea."
+        },
+        {
+          "id": "bgm_neutral_mid_ambient_01",
+          "mood": "calm, steady, neutral",
+          "tempo": "mid",
+          "archetype": "The Narrator",
+          "use_case_depth": "Purely educational content."
+        },
+        {
+          "id": "bgm_motion_mid_synth_01",
+          "mood": "technological, futuristic",
+          "tempo": "mid",
+          "archetype": "The Innovation",
+          "use_case_depth": "Tech stories, inventions, digital breakthroughs."
+        },
+        {
+          "id": "bgm_motion_mid_synth_02",
+          "mood": "low energy, methodical",
+          "tempo": "slow-mid",
+          "archetype": "The Stealth Mode",
+          "use_case_depth": "Quiet progress, early garage phase."
+        },
+        {
+          "id": "bgm_motion_mid_soft_01",
+          "mood": "friendly, safe, gentle",
+          "tempo": "mid",
+          "archetype": "The Soft Build",
+          "use_case_depth": "Consumer brands, early innocence."
+        },
+        {
+          "id": "bgm_motion_mid_piano_01",
+          "mood": "intellectual, precise",
+          "tempo": "mid",
+          "archetype": "The Genius",
+          "use_case_depth": "Smart insights, clever realizations."
+        }
+      ]
+    },
+    {
+      "category": "REFLECTIVE_EMOTION",
+      "description": "Used for lessons, regret, reflection, and endings.",
+      "tracks": [
+        {
+          "id": "bgm_reflect_bright_piano",
+          "mood": "hopeful, uplifting",
+          "tempo": "mid",
+          "archetype": "The Victory",
+          "use_case_depth": "Positive endings, success stories."
+        },
+        {
+          "id": "bgm_reflect_low_slow_01",
+          "mood": "melancholic, regretful, heavy",
+          "tempo": "slow",
+          "archetype": "The Tragedy",
+          "use_case_depth": "Lost potential, emotional endings (Kodak, Blockbuster)."
+        },
+        {
+          "id": "bgm_reflect_low_harmony_01",
+          "mood": "peaceful, resolved",
+          "tempo": "slow",
+          "archetype": "The Peace",
+          "use_case_depth": "Closure, acceptance, meaning beyond money."
+        },
+        {
+          "id": "bgm_reflect_low_piano_01",
+          "mood": "sad, isolated",
+          "tempo": "slow",
+          "archetype": "The Lonely Top",
+          "use_case_depth": "Wealth without happiness."
+        },
+        {
+          "id": "bgm_neutral_mid_epic_01",
+          "mood": "grand, cinematic",
+          "tempo": "slow-build",
+          "archetype": "The Legacy",
+          "use_case_depth": "World-changing outcomes."
+        },
+        {
+          "id": "bgm_neutral_mid_ambient_02",
+          "mood": "dreamy, fading, nostalgic",
+          "tempo": "slow",
+          "archetype": "The Fade",
+          "use_case_depth": "Slow decline rather than collapse."
+        }
+      ]
+    }
+  ]
+}

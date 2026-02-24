@@ -36,7 +36,7 @@ export const C = {
     NAVY: "#111827",
     CREAM: "#F4F1EA",
     GOLD: "#C5A059",
-    OXBLOOD: "#8B1A1A",
+    OXBLOOD: "#8B0000",
     GOLD_DIM: "rgba(197,160,89,0.35)",
     CREAM_DIM: "rgba(244,241,234,0.45)",
     CREAM_FAINT: "rgba(244,241,234,0.15)",

@@ -1,37 +1,14 @@
 {
   "scene1_video": "/assets/processed/scene1_atmosphere.mp4",
-  "scene1_image": "https://images.pexels.com/photos/8175147/pexels-photo-8175147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene2_video": "/assets/processed/scene2_atmosphere.mp4",
-  "scene2_image": "https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene3_video": "/assets/processed/scene3_atmosphere.mp4",
-  "scene3_image": "https://images.pexels.com/photos/7947744/pexels-photo-7947744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene4_video": "/assets/processed/scene4_atmosphere.mp4",
-  "scene4_image": "https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene5_video": "/assets/processed/scene5_atmosphere.mp4",
-  "scene5_image": "https://images.pexels.com/photos/208724/pexels-photo-208724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene6_video": "/assets/processed/scene6_atmosphere.mp4",
-  "scene6_image": "https://images.pexels.com/photos/35076286/pexels-photo-35076286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene7_video": "/assets/processed/scene7_atmosphere.mp4",
-  "scene7_image": "https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene8_video": "/assets/processed/scene8_atmosphere.mp4",
-  "scene8_image": "https://images.pexels.com/photos/3054252/pexels-photo-3054252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene9_video": "/assets/processed/scene9_atmosphere.mp4",
-  "scene9_image": "https://images.pexels.com/photos/4386442/pexels-photo-4386442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene10_video": "/assets/processed/scene10_atmosphere.mp4",
-  "scene10_image": "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
   "scene11_video": "/assets/processed/scene11_atmosphere.mp4",
-  "scene11_image": "https://images.pexels.com/photos/266436/pexels-photo-266436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-
-  "scene12_video": "/assets/processed/scene12_atmosphere.mp4",
-  "scene12_image": "https://images.pexels.com/photos/4386476/pexels-photo-4386476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  "scene12_video": "/assets/processed/scene12_atmosphere.mp4"
 }

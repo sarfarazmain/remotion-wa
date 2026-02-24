@@ -1,0 +1,603 @@
+{
+  "meta": {
+    "title": "Stop Resulting",
+    "slug": "stop-resulting-thinking-in-bets",
+    "archetype": "HIDDEN_MECHANISM"
+  },
+  "narration": "Your best decisions can produce your worst outcomes. That mistake has a name: Resulting. And it quietly destroys fortunes. In 2015, one pass play lost the Seattle Seahawks the Super Bowl. Commentators called it the worst call in history. They were wrong. They judged the decision by the outcome instead of the odds. The hidden force is variance. Luck is just noise in the data. If you drive home drunk and survive, was it a good decision? Markets reward the lucky amateur and punish the disciplined professional. Over time, that incentive structure erodes real capital. Winners separate process from outcome. You evaluate the bet before the card is revealed. Stop judging results. Start thinking in bets.",
+  "bgm": {
+    "trackId": "bgm_dark_high_minimal_01"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "narration": "Your best decisions can produce your worst outcomes.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "BEST DECISIONS",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "BOLD"
+          },
+          {
+            "text": "WORST OUTCOMES",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 6
+      },
+      "heroWord": "OUTCOMES",
+      "pexelsVideoQuery": "dark storm clouds rolling slow cinematic",
+      "pexelsImageQuery": "dark textured paper background close up",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 001 \u2014 OUTCOME PARADOX",
+        "citation": "Source: Decision Theory"
+      }
+    },
+    {
+      "index": 2,
+      "narration": "That mistake has a name: Resulting. And it quietly destroys fortunes.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "RESULTING",
+            "size": 110,
+            "color": "GOLD"
+          },
+          {
+            "text": "DESTROYS FORTUNES",
+            "size": 64,
+            "color": "CREAM"
+          }
+        ],
+        "lineStagger": 8
+      },
+      "heroWord": "RESULTING",
+      "pexelsVideoQuery": "burning paper in dark room slow motion",
+      "pexelsImageQuery": "burned document edges close up dark",
+      "microReset": {
+        "type": "REDACTION_REVEAL",
+        "label": "COGNITIVE ERROR"
+      },
+      "source": {
+        "classification": "EXHIBIT 002 \u2014 COGNITIVE BIAS",
+        "citation": "Source: Behavioral Finance"
+      }
+    },
+    {
+      "index": 3,
+      "narration": "In 2015, one pass play lost the Seattle Seahawks the Super Bowl.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "IMMERSIVE_BLEED",
+      "layout": "OFFSET_STACK",
+      "physics": "STOP_MOTION",
+      "typography": {
+        "lines": [
+          {
+            "text": "2015",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "BOLD"
+          },
+          {
+            "text": "ONE PASS PLAY",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "CREAM"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 6
+      },
+      "evidence": {
+        "type": "EVIDENCE_CARD",
+        "title": "SUPER BOWL XLIX",
+        "body": "Goal line interception"
+      },
+      "pexelsVideoQuery": "american football stadium lights night slow motion",
+      "pexelsImageQuery": "american football on goal line close up",
+      "heroWord": "PASS",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 003 \u2014 GAME DECISION",
+        "citation": "Source: NFL Archives, 2015"
+      }
+    },
+    {
+      "index": 4,
+      "narration": "Commentators called it the worst call in history. They were wrong.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          {
+            "text": "WORST CALL",
+            "size": 100,
+            "color": "CREAM"
+          },
+          {
+            "text": "WRONG",
+            "size": 120,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "heroWord": "WRONG",
+      "pexelsVideoQuery": "old television static glitch dark",
+      "pexelsImageQuery": "vintage crt television stack dark room",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 004 \u2014 MEDIA REACTION",
+        "citation": "Source: Sports Commentary, 2015"
+      }
+    },
+    {
+      "index": 5,
+      "narration": "They judged the decision by the outcome instead of the odds.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "VOID",
+      "layout": "OFFSET_STACK",
+      "physics": "STOP_MOTION",
+      "typography": {
+        "lines": [
+          {
+            "text": "JUDGED BY",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "BOLD"
+          },
+          {
+            "text": "OUTCOME",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 6
+      },
+      "evidence": {
+        "type": "VERDICT_CARD",
+        "leftLabel": "OUTCOME",
+        "rightLabel": "ODDS",
+        "leftItems": [
+          "Single Result",
+          "Emotional",
+          "Short-Term"
+        ],
+        "rightItems": [
+          "Probabilities",
+          "Rational",
+          "Long-Term"
+        ]
+      },
+      "pexelsVideoQuery": "casino table dark cinematic close up",
+      "pexelsImageQuery": "casino poker table chips close up",
+      "heroWord": "OUTCOME",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 005 \u2014 VERDICT ERROR",
+        "citation": "Source: Probability Theory"
+      }
+    },
+    {
+      "index": 6,
+      "narration": "The hidden force is variance. Luck is just noise in the data.",
+      "heroType": "DATA_STATE",
+      "environment": "SIGNAL_GRID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "HIDDEN FORCE",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "BOLD"
+          },
+          {
+            "text": "VARIANCE",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "GOLD"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 6
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "VOLATILE RETURNS",
+        "color": "GOLD",
+        "data": [
+          {
+            "label": "T1",
+            "value": 4
+          },
+          {
+            "label": "T2",
+            "value": -3
+          },
+          {
+            "label": "T3",
+            "value": 6
+          },
+          {
+            "label": "T4",
+            "value": -2
+          },
+          {
+            "label": "T5",
+            "value": 5
+          },
+          {
+            "label": "T6",
+            "value": -4
+          }
+        ]
+      },
+      "pexelsVideoQuery": "abstract light refraction prism dark",
+      "pexelsImageQuery": "glass prism light refraction dark background",
+      "heroWord": "VARIANCE",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "T6"
+      },
+      "source": {
+        "classification": "EXHIBIT 006 \u2014 RETURN PATH",
+        "citation": "Source: Simulated Returns"
+      }
+    },
+    {
+      "index": 7,
+      "narration": "If you drive home drunk and survive, was it a good decision?",
+      "heroType": "HERO_VIDEO",
+      "environment": "IMMERSIVE_BLEED",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "GOOD DECISION?",
+            "size": 96,
+            "color": "CREAM"
+          }
+        ],
+        "lineStagger": 8
+      },
+      "pexelsVideoQuery": "rainy windshield night driving blurred lights",
+      "pexelsImageQuery": "car dashboard at night rain windshield",
+      "heroWord": "DECISION",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 007 \u2014 MORAL HAZARD",
+        "citation": "Source: Risk Ethics"
+      }
+    },
+    {
+      "index": 8,
+      "narration": "Markets reward the lucky amateur and punish the disciplined professional.",
+      "heroType": "DATA_STATE",
+      "environment": "SIGNAL_GRID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "MARKETS REWARD",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "BOLD"
+          },
+          {
+            "text": "LUCKY",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 6
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "TRADER OUTCOMES",
+        "highlightLast": true,
+        "data": [
+          {
+            "label": "Trader A",
+            "value": 12
+          },
+          {
+            "label": "Trader B",
+            "value": -4
+          },
+          {
+            "label": "Trader C",
+            "value": 9
+          },
+          {
+            "label": "Trader D",
+            "value": -6
+          },
+          {
+            "label": "Trader E",
+            "value": -12
+          }
+        ]
+      },
+      "pexelsVideoQuery": "empty corporate boardroom dark morning light",
+      "pexelsImageQuery": "corporate boardroom table dramatic lighting",
+      "heroWord": "LUCKY",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "Trader E"
+      },
+      "source": {
+        "classification": "EXHIBIT 008 \u2014 INCENTIVES",
+        "citation": "Source: Market Behavior Study"
+      }
+    },
+    {
+      "index": 9,
+      "narration": "Over time, that incentive structure erodes real capital.",
+      "heroType": "DATA_STATE",
+      "environment": "SIGNAL_GRID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "ERODES",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "BOLD"
+          },
+          {
+            "text": "CAPITAL",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 6
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "CAPITAL DECAY",
+        "color": "OXBLOOD",
+        "data": [
+          {
+            "label": "Y1",
+            "value": 100
+          },
+          {
+            "label": "Y2",
+            "value": 92
+          },
+          {
+            "label": "Y3",
+            "value": 81
+          },
+          {
+            "label": "Y4",
+            "value": 70
+          },
+          {
+            "label": "Y5",
+            "value": 58
+          },
+          {
+            "label": "Y6",
+            "value": 44
+          }
+        ]
+      },
+      "pexelsVideoQuery": "rusted metal texture close up dark",
+      "pexelsImageQuery": "rusted metal surface texture macro",
+      "heroWord": "CAPITAL",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "Y6"
+      },
+      "source": {
+        "classification": "EXHIBIT 009 \u2014 CAPITAL DECAY",
+        "citation": "Source: Portfolio Simulation"
+      }
+    },
+    {
+      "index": 10,
+      "narration": "Winners separate process from outcome.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "SEPARATE",
+            "size": 100,
+            "color": "GOLD"
+          },
+          {
+            "text": "PROCESS",
+            "size": 72,
+            "color": "CREAM"
+          },
+          {
+            "text": "FROM OUTCOME",
+            "size": 72,
+            "color": "CREAM_DIM"
+          }
+        ],
+        "lineStagger": 8
+      },
+      "heroWord": "SEPARATE",
+      "pexelsVideoQuery": "chalk line on concrete close up",
+      "pexelsImageQuery": "white chalk line on dark concrete",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 010 \u2014 DISCIPLINE",
+        "citation": "Source: Professional Investing"
+      }
+    },
+    {
+      "index": 11,
+      "narration": "You evaluate the bet before the card is revealed.",
+      "heroType": "HERO_VIDEO",
+      "environment": "IMMERSIVE_BLEED",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "JUDGE THE BET",
+            "size": 96,
+            "color": "CREAM"
+          },
+          {
+            "text": "BEFORE REVEAL",
+            "size": 72,
+            "color": "GOLD"
+          }
+        ],
+        "lineStagger": 8
+      },
+      "heroWord": "BET",
+      "pexelsVideoQuery": "playing card slow motion dark background",
+      "pexelsImageQuery": "single playing card black background",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 011 \u2014 PROBABILITY",
+        "citation": "Source: Game Theory"
+      }
+    },
+    {
+      "index": 12,
+      "narration": "Stop judging results. Start thinking in bets.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          {
+            "text": "STOP RESULTING",
+            "size": 110,
+            "color": "OXBLOOD"
+          },
+          {
+            "text": "THINK IN BETS",
+            "size": 96,
+            "color": "GOLD"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "heroWord": "BETS",
+      "pexelsVideoQuery": "poker chip spinning dark spotlight",
+      "pexelsImageQuery": "poker chip on dark table spotlight",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 012 \u2014 FINAL VERDICT",
+        "citation": "Source: Decision Science"
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": 1,
+      "to": 2,
+      "type": "Z_AXIS_PORTAL"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "type": "INFINITE_DESK_DOWN"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "type": "INFINITE_DESK_DOWN"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "type": "FLASHBULB"
+    }
+  ]
+}

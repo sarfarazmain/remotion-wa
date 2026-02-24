@@ -1,0 +1,8 @@
+node_modules
+.git
+.claude
+.env
+out/*.mp4
+out/*.meta.json
+*.log
+.DS_Store

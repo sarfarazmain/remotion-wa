@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { MagnatesVideo } from "./MagnatesVideo";
 import { DocumentaryVideo } from "./DocumentaryVideo";
 import { WealthArchiveVideo } from "./WealthArchiveVideo";
+import { WARP19_TOTAL } from "./WealthArchiveVideo/PacingEngine";
 import "./index.css";
 
 export const RemotionRoot: React.FC = () => {
@@ -27,7 +28,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="WealthArchive"
         component={WealthArchiveVideo}
-        durationInFrames={2013}
+        durationInFrames={WARP19_TOTAL}
         fps={30}
         width={1080}
         height={1920}

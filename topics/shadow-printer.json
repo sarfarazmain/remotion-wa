@@ -1,0 +1,474 @@
+{
+  "meta": {
+    "title": "The Shadow Printer",
+    "slug": "shadow-printer",
+    "archetype": "HIDDEN_MECHANISM"
+  },
+
+  "narration": "Central banks are not printing money anymore. The government is. The Fed isn't leading the market. It is chasing a moving tiger. For a decade, we believed low rates were the only engine of growth. Investors grew addicted to cheap debt and artificial stability. But in the current cycle, the engine changed. Fiscal dominance arrived. Governments are now bypassing banks to inject capital directly into the economy. Inflation is a policy choice, not an accident of the supply chain. Zombie companies are dying because their 2% debt is now a trap. Real assets win when the currency is devalued to fund deficits. Wealth is being redistributed from the saver to the spender. The risk is no longer a crash. It is a slow, hot burn. The printing press hasn't stopped. It just found a new operator.",
+
+  "bgm": {
+    "trackId": "bgm_dark_high_drone_01"
+  },
+
+  "scenes": [
+    {
+      "index": 1,
+      "narration": "Central banks are not printing money anymore. The government is. The Fed isn't leading the market.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          { "text": "THE", "type": "CONNECTIVE", "animation": "SLIDE", "weight": "BOLD" },
+          { "text": "GOVERNMENT", "type": "HERO", "animation": "SLIDE", "weight": "BOLD" },
+          { "text": "IS PRINTING", "type": "HERO", "animation": "REDACTION", "weight": "BLACK", "color": "GOLD" }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "dataTicker": {
+        "from": 0,
+        "to": 34.7,
+        "prefix": "$",
+        "suffix": "T",
+        "decimals": 1,
+        "label": "Total US National Debt",
+        "color": "GOLD"
+      },
+      "declaration": {
+        "lines": [
+          { "text": "Not the Fed.", "size": 52, "color": "CREAM_DIM" }
+        ],
+        "lineStagger": 10
+      },
+      "pexelsVideoQuery": "money printing press machine industrial",
+      "pexelsImageQuery": "us treasury building historic black and white",
+      "heroWord": "PRINTING",
+      "connectiveWord": "THE",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 001 — DEBT SPIRAL",
+        "citation": "Source: St. Louis Fed (FRED), 2024"
+      }
+    },
+    {
+      "index": 2,
+      "narration": "It is chasing a moving tiger.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          { "text": "CHASING", "size": 88, "color": "CREAM" },
+          { "text": "A MOVING", "size": 72, "color": "CREAM_DIM" },
+          { "text": "TIGER.", "size": 100, "color": "GOLD" }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "US M2 Money Supply ($T)",
+        "lineLabel": "EXPONENTIAL",
+        "color": "GOLD",
+        "data": [
+          { "label": "1800", "value": 0.1 },
+          { "label": "1900", "value": 1.5 },
+          { "label": "1970", "value": 3.2 },
+          { "label": "2000", "value": 6.8 },
+          { "label": "2019", "value": 14.2 },
+          { "label": "2022", "value": 21.6 },
+          { "label": "2024", "value": 20.8 }
+        ]
+      },
+      "pexelsVideoQuery": "tiger darkness slow motion cinematic",
+      "pexelsImageQuery": "federal reserve chairman portrait historic",
+      "heroWord": "chasing",
+      "microReset": { "type": "HIGHLIGHTER" },
+      "source": {
+        "classification": "EXHIBIT 002 — M2 SUPPLY",
+        "citation": "Source: Federal Reserve Economic Data"
+      }
+    },
+    {
+      "index": 3,
+      "narration": "For a decade, we believed low rates were the only engine of growth.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "The Only", "size": 72, "color": "CREAM_DIM" },
+          { "text": "Engine Of", "size": 88, "color": "GOLD" },
+          { "text": "Growth.", "size": 100, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "Federal Funds Rate (%)",
+        "lineLabel": "ZIRP ERA",
+        "color": "OXBLOOD",
+        "data": [
+          { "label": "2000", "value": 6.5 },
+          { "label": "2008", "value": 0.2 },
+          { "label": "2015", "value": 0.2 },
+          { "label": "2018", "value": 2.4 },
+          { "label": "2020", "value": 0.1 },
+          { "label": "2022", "value": 4.5 },
+          { "label": "2024", "value": 5.5 }
+        ]
+      },
+      "pexelsVideoQuery": "industrial engine steam machinery",
+      "pexelsImageQuery": "chart graph paper vintage",
+      "heroWord": "rates",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 003 — ZIRP ANOMALY",
+        "citation": "Source: Federal Reserve Board"
+      }
+    },
+    {
+      "index": 4,
+      "narration": "Investors grew addicted to cheap debt and artificial stability.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "Addicted", "size": 88, "color": "CREAM" },
+          { "text": "To Cheap", "size": 80, "color": "CREAM_DIM" },
+          { "text": "Debt.", "size": 100, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "Annual US Deficit ($B)",
+        "yUnit": "$",
+        "color": "GOLD",
+        "highlightLast": true,
+        "data": [
+          { "label": "2019", "value": 984 },
+          { "label": "2020", "value": 3132 },
+          { "label": "2021", "value": 2776 },
+          { "label": "2022", "value": 1375 },
+          { "label": "2023", "value": 1695, "sublabel": "↑" }
+        ]
+      },
+      "pexelsVideoQuery": "needle medical abstract dark",
+      "pexelsImageQuery": "us debt clock digital counter",
+      "heroWord": "addicted",
+      "microReset": { "type": "REDACTION_REVEAL", "label": "PEAK DEFICIT" },
+      "source": {
+        "classification": "EXHIBIT 004 — DEFICIT",
+        "citation": "Source: Congressional Budget Office (CBO)"
+      }
+    },
+    {
+      "index": 5,
+      "narration": "But in the current cycle, the engine changed. Fiscal dominance arrived.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "The Engine", "size": 72, "color": "CREAM_DIM" },
+          { "text": "Changed.", "size": 104, "color": "GOLD" }
+        ],
+        "lineStagger": 12
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "Monetary vs Fiscal Dominance (% influence)",
+        "lineLabel": "MONETARY",
+        "color": "GOLD",
+        "data": [
+          { "label": "2008", "value": 90 },
+          { "label": "2012", "value": 82 },
+          { "label": "2016", "value": 74 },
+          { "label": "2019", "value": 60 },
+          { "label": "2020", "value": 42 },
+          { "label": "2022", "value": 30 },
+          { "label": "2024", "value": 22 }
+        ],
+        "secondLine": {
+          "label": "FISCAL",
+          "color": "OXBLOOD",
+          "data": [
+            { "label": "2008", "value": 18 },
+            { "label": "2012", "value": 28 },
+            { "label": "2016", "value": 44 },
+            { "label": "2019", "value": 56 },
+            { "label": "2020", "value": 72 },
+            { "label": "2022", "value": 82 },
+            { "label": "2024", "value": 92 }
+          ]
+        }
+      },
+      "pexelsVideoQuery": "gears turning mechanism old",
+      "pexelsImageQuery": "imf logo building",
+      "heroWord": "changed",
+      "connectiveWord": "BUT",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 005 — CROSSOVER",
+        "citation": "Source: IMF Fiscal Monitor"
+      }
+    },
+    {
+      "index": 6,
+      "narration": "Governments are now bypassing banks to inject capital directly into the economy.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          { "text": "BYPASSING", "type": "HERO", "animation": "STOMP", "weight": "BLACK", "color": "OXBLOOD" },
+          { "text": "THE", "type": "CONNECTIVE", "animation": "SLIDE", "weight": "BOLD" },
+          { "text": "BANKS.", "type": "HERO", "animation": "SLIDE", "weight": "BOLD", "color": "CREAM" }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "evidence": {
+        "type": "FLOW_ARROW",
+        "fromLabel": "TREASURY",
+        "toLabel": "ECONOMY",
+        "throughLabel": "BANKS"
+      },
+      "pexelsVideoQuery": "river flowing fast dark",
+      "pexelsImageQuery": "bank building neoclassical columns",
+      "heroWord": "bypassing",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 006 — DISINTERMEDIATION",
+        "citation": "Source: BIS Working Papers, 2023"
+      }
+    },
+    {
+      "index": 7,
+      "narration": "Inflation is a policy choice, not an accident of the supply chain.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "Policy", "size": 80, "color": "CREAM" },
+          { "text": "Choice.", "size": 96, "color": "GOLD" },
+          { "text": "Not Accident.", "size": 64, "color": "CREAM_DIM" }
+        ],
+        "lineStagger": 10
+      },
+      "evidence": {
+        "type": "VERDICT_CARD",
+        "leftLabel": "Accident",
+        "leftItems": ["Supply shocks", "Demand pull"],
+        "rightLabel": "Policy Tool",
+        "rightItems": ["Debt erosion via inflation"]
+      },
+      "pexelsVideoQuery": "forest fire burning slow motion",
+      "pexelsImageQuery": "newspaper headline inflation vintage",
+      "heroWord": "policy",
+      "microReset": { "type": "REDACTION_REVEAL", "label": "COCHRANE — 2023" },
+      "source": {
+        "classification": "EXHIBIT 007 — FTPL",
+        "citation": "Source: Cochrane (2023), Fiscal Theory of the Price Level"
+      }
+    },
+    {
+      "index": 8,
+      "narration": "Zombie companies are dying because their 2% debt is now a trap.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "2% Debt.", "size": 88, "color": "CREAM" },
+          { "text": "Now A Trap.", "size": 88, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 12
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "Zombie Firms — % of Listed Companies",
+        "color": "OXBLOOD",
+        "highlightLast": true,
+        "data": [
+          { "label": "2008", "value": 6 },
+          { "label": "2012", "value": 10 },
+          { "label": "2015", "value": 12 },
+          { "label": "2019", "value": 16, "sublabel": "Peak ZIRP" },
+          { "label": "2022", "value": 22, "sublabel": "Surge" }
+        ]
+      },
+      "pexelsVideoQuery": "graveyard fog mystery",
+      "pexelsImageQuery": "abandoned factory building",
+      "heroWord": "Zombie",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 008 — ZOMBIE ECONOMY",
+        "citation": "Source: BIS Quarterly Review, 2023"
+      }
+    },
+    {
+      "index": 9,
+      "narration": "Real assets win when the currency is devalued to fund deficits.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "Real Assets", "size": 88, "color": "GOLD" },
+          { "text": "Win.", "size": 120, "color": "CREAM" }
+        ],
+        "lineStagger": 12
+      },
+      "evidence": {
+        "type": "STAT_LINES",
+        "stats": [
+          { "label": "Gold", "value": "+42%", "color": "GOLD" },
+          { "label": "Real Estate", "value": "+38%", "color": "GOLD" },
+          { "label": "Commodities", "value": "+31%", "color": "GOLD" },
+          { "label": "Bitcoin", "value": "+290%", "color": "GOLD" },
+          { "label": "Cash (Real)", "value": "-24%", "color": "OXBLOOD" }
+        ]
+      },
+      "pexelsVideoQuery": "gold vault bars shine",
+      "pexelsImageQuery": "bitcoin physical coin gold",
+      "heroWord": "assets",
+      "microReset": { "type": "HIGHLIGHTER", "targetElement": "bitcoin" },
+      "source": {
+        "classification": "EXHIBIT 009 — ASSET PROTECTION",
+        "citation": "Source: Goldman Sachs Research, 2024"
+      }
+    },
+    {
+      "index": 10,
+      "narration": "Wealth is being redistributed from the saver to the spender.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          { "text": "SAVER", "type": "HERO", "animation": "SLIDE", "weight": "REGULAR", "color": "CREAM_DIM" },
+          { "text": "SPENDER", "type": "HERO", "animation": "STOMP", "weight": "BLACK", "color": "OXBLOOD" }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "dataTicker": {
+        "from": 0,
+        "to": -0.8,
+        "decimals": 1,
+        "suffix": "% real yield",
+        "label": "What savers actually earn after inflation",
+        "color": "OXBLOOD"
+      },
+      "evidence": {
+        "type": "STAT_LINES",
+        "stats": [
+          { "label": "Nominal Rate", "value": "5.25%", "color": "GOLD" },
+          { "label": "CPI Inflation", "value": "3.40%", "color": "GOLD" },
+          { "label": "Real Yield", "value": "-0.8%", "color": "OXBLOOD" },
+          { "label": "Wealth Eroded", "value": "-$12T", "color": "OXBLOOD" }
+        ]
+      },
+      "pexelsVideoQuery": "hourglass sand falling time",
+      "pexelsImageQuery": "wallet empty leather",
+      "heroWord": "redistributed",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 010 — WEALTH TRANSFER",
+        "citation": "Source: FRED, 2024"
+      }
+    },
+    {
+      "index": 11,
+      "narration": "The risk is no longer a crash. It is a slow, hot burn.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "No Crash.", "size": 80, "color": "GOLD" },
+          { "text": "A Slow,", "size": 92, "color": "OXBLOOD" },
+          { "text": "Hot Burn.", "size": 92, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "Interest Payments on US Debt ($B)",
+        "lineLabel": "US DEBT SERVICE",
+        "color": "OXBLOOD",
+        "data": [
+          { "label": "2010", "value": 413 },
+          { "label": "2015", "value": 402 },
+          { "label": "2018", "value": 523 },
+          { "label": "2020", "value": 522 },
+          { "label": "2022", "value": 724 },
+          { "label": "2023", "value": 879 },
+          { "label": "2024", "value": 1100 }
+        ]
+      },
+      "pexelsVideoQuery": "candle flame burning dark",
+      "pexelsImageQuery": "stock market crash newspaper 1929",
+      "heroWord": "crash",
+      "microReset": { "type": "HIGHLIGHTER", "targetElement": "chart-2024" },
+      "source": {
+        "classification": "EXHIBIT 011 — DEBT SERVICE",
+        "citation": "Source: US Treasury Monthly Statement"
+      }
+    },
+    {
+      "index": 12,
+      "narration": "The printing press hasn't stopped. It just found a new operator.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          { "text": "It Found", "size": 72, "color": "CREAM" },
+          { "text": "A New", "size": 64, "color": "CREAM_DIM" },
+          { "text": "Operator.", "size": 100, "color": "GOLD" }
+        ],
+        "lineStagger": 14
+      },
+      "pexelsVideoQuery": "printing press modern high speed",
+      "pexelsImageQuery": "capitol hill building night",
+      "heroWord": "operator",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "CLASSIFIED — TOP SECRET",
+        "citation": "Project Spinning Halley"
+      }
+    }
+  ],
+
+  "transitions": [
+    { "from": 1, "to": 2, "type": "Z_AXIS_PORTAL" },
+    { "from": 2, "to": 3, "type": "INFINITE_DESK_LEFT" },
+    { "from": 3, "to": 4, "type": "INFINITE_DESK_LEFT" },
+    { "from": 4, "to": 5, "type": "INFINITE_DESK_DOWN" },
+    { "from": 5, "to": 6, "type": "INFINITE_DESK_LEFT" },
+    { "from": 6, "to": 7, "type": "INK_BLEED" },
+    { "from": 7, "to": 8, "type": "INFINITE_DESK_RIGHT" },
+    { "from": 8, "to": 9, "type": "INFINITE_DESK_DOWN" },
+    { "from": 9, "to": 10, "type": "INFINITE_DESK_LEFT" },
+    { "from": 10, "to": 11, "type": "INK_BLEED" },
+    { "from": 11, "to": 12, "type": "FLASHBULB" }
+  ]
+}

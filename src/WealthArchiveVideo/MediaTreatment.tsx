@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Img, Video, interpolate, spring, useVideoConfig, random, staticFile } from "remotion";
+import { AbsoluteFill, OffthreadVideo, interpolate, spring, useVideoConfig, random, staticFile } from "remotion";
 import { useSceneFrame } from "./SceneContext";
 import { stepped } from "./Typography";
 import { C } from "./fonts";
@@ -15,6 +15,28 @@ import { C } from "./fonts";
  *  2. Only Image (Evidence)
  *  3. Both (Composite: Image floating over blurred Video)
  */
+
+/** Simple image component — no delayRender, no cancelRender.
+ *  If the image fails to load, it renders nothing (null) instead of crashing. */
+const SimpleImg: React.FC<{
+    src: string;
+    style?: React.CSSProperties;
+}> = ({ src, style }) => {
+    const [failed, setFailed] = React.useState(false);
+
+    if (failed) return null;
+
+    return (
+        <img
+            src={src}
+            style={style}
+            onError={() => {
+                console.warn(`MediaTreatment: Failed to load image ${src}`);
+                setFailed(true);
+            }}
+        />
+    );
+};
 
 interface MediaTreatmentProps {
     src?: string;       // Legacy prop (treated as primary if others missing)
@@ -43,10 +65,13 @@ export const MediaTreatment: React.FC<MediaTreatmentProps> = ({
     const finalVideo = videoSrc || (type === "video" ? src : undefined);
     const finalImage = imageSrc || (type === "image" ? src : undefined);
 
-    // Resolve local video paths using staticFile
+    // Resolve local paths using staticFile
     const resolvedVideo = (finalVideo && finalVideo.startsWith("/"))
         ? staticFile(finalVideo.slice(1))
         : finalVideo;
+    const resolvedImage = (finalImage && finalImage.startsWith("/"))
+        ? staticFile(finalImage.slice(1))
+        : finalImage;
 
     // ─── SOP FILTERS ──────────────────────────────────────────────────────────
     // "Grayscale 100%, Sepia 30%, Contrast 120%, Brightness 40%"
@@ -117,11 +142,12 @@ export const MediaTreatment: React.FC<MediaTreatmentProps> = ({
 
     return (
         <AbsoluteFill>
-            {finalVideo && (
+            {finalVideo && resolvedVideo && (
                 <AbsoluteFill style={{ overflow: "hidden" }}>
-                    <Video
+                    {/* OffthreadVideo = no delayRender stall, deterministic frame extraction via ffmpeg */}
+                    <OffthreadVideo
                         src={resolvedVideo}
-                        muted loop
+                        muted
                         style={{
                             width: "100%", height: "100%", objectFit: "cover",
                             // Optimization: If pre-baked (local processed file), disable runtime filter
@@ -136,12 +162,12 @@ export const MediaTreatment: React.FC<MediaTreatmentProps> = ({
             )}
 
             {/* LAYER 2: EVIDENCE (Foreground Image) */}
-            {finalImage && (
+            {resolvedImage && (
                 <AbsoluteFill style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <div style={evidenceContainerStyle}>
                         <div style={{ width: "100%", height: "100%", overflow: "hidden", filter: EVIDENCE_FILTER }}>
-                            <Img
-                                src={finalImage}
+                            <SimpleImg
+                                src={resolvedImage}
                                 style={{
                                     width: "100%", height: "100%", objectFit: "cover",
                                 }}

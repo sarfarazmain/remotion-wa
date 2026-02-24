@@ -81,7 +81,7 @@ const KineticUnitRenderer: React.FC<{
     const isHero = unit.type === "HERO";
     const styleBase = isHero ? UNIT_STYLES.HERO : UNIT_STYLES.CONNECTIVE;
     const color = unit.color || (isHero ? C.GOLD : C.CREAM);
-    const weight = WEIGHT_MAP[unit.weight || (isHero ? "BLACK" : "REGULAR")];
+    const weight = WEIGHT_MAP[unit.weight || (isHero ? "BLACK" : "BOLD")];
     const tracking = unit.extraTracking ? `${unit.extraTracking}em` : (isHero ? "-0.02em" : "0.05em");
 
     // Determine Animation

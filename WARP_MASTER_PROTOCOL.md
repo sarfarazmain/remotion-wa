@@ -263,6 +263,7 @@ Use this when the narrator emphasizes a specific metric or a shocking truth that
 * **The Properties:** Color must be Antique Gold (`#C5A059`) set to `mix-blend-mode: multiply` with an opacity of 85%. This allows the texture of the parchment background to bleed through the marker ink.
 * **The Motion:** Smooth but fast — **8 to 10 frames**, left-to-right draw via `stroke-dashoffset`.
 * **Implementation Note:** The MicroAnimationReset system also implements the Highlighter as an **ellipse stroke** (for circling data points on charts). The linear SVG path variant (for underlining text) is a separate component in Typography.tsx. Both are valid expressions of this rule.
+* **TARGETING RULE (Mandatory):** The ellipse Highlighter MUST specify a `targetElement` string in the scene's `microReset` config. This string is resolved to absolute `{cx, cy, rx, ry}` canvas coordinates by `resolveHighlighterTarget()` in `MicroAnimationReset.tsx`. **A HIGHLIGHTER without a valid `targetElement` will NOT render** — no fallback, no default coordinates. Hardcoded default positions are banned because they create circles on irrelevant areas (wrong chart, wrong panel, empty space). Every new `targetElement` value must be added to the resolver's switch statement with precise coordinates for the layout it appears in.
 
 ### 3. The "Stomp & Shift" (Size / Weight Manipulation)
 
@@ -370,3 +371,95 @@ Visuals without synced audio fail the quality standard. Audio cues MUST be mappe
 | Hero Video (full-bleed, no text) | Native Foley amplified +300% |
 
 **Foley Timing:** Onset = transition/animation frame 0. Peak amplitude = 60% of the animation's duration. Tail = extends 10 frames into the settled state (allows the sound to naturally decay).
+
+### 10. Chart Draw Budget Rule
+
+Charts are the slowest visual element to parse. Their draw animation MUST complete with a clean buffer before the exit transition begins. Failure to enforce this results in charts that are cut off, partially drawn, or completely blank.
+
+**Hard Rules:**
+
+1. **`CHART_DRAW_START` MUST fire at `SCENE_START + 15` frames** — NOT at the Hero Word cue. Hero Words often appear late in narration, leaving insufficient draw time. The 15-frame delay allows the scene environment to establish before the chart begins drawing.
+2. **Charts MUST complete their draw animation at least 35 frames before scene end.** The 35-frame buffer = 5f visual settle + 30f exit transition window.
+3. **Draw duration is dynamic**, computed as: `drawDuration = min(maxDraw, idealDraw)` where `maxDraw = sceneDuration - chartStart - 35` and `idealDraw` = 80f (LINE) / 50f (BAR). Minimum floor: 25 frames.
+4. **Minimum DATA_STATE scene duration:**
+   - LINE charts (80f ideal draw): minimum **130 frames** (4.3s) = 15f establish + 80f draw + 35f exit buffer
+   - BAR charts (50f ideal draw): minimum **100 frames** (3.3s) = 15f establish + 50f draw + 35f exit buffer
+5. If computed scene duration falls below the minimum, the **pipeline MUST emit a warning** during code generation.
+
+### 11. BGM Selection & Auto-Ducking Rule
+
+Every composition MUST include a Background Music (BGM) track. BGM establishes emotional subtext and prevents the viewer from experiencing audio dead zones between narration phrases.
+
+**BGM Catalogue:** All track IDs are defined in `pipeline/bgm-catalogue.json`. Every `topic.json` MUST include a `bgm.trackId` field that references a valid catalogue ID. The pipeline validator will reject any trackId whose `.mp3` file does not exist in `public/bgm/`.
+
+**Selection Rule:** Match the BGM archetype to the video's emotional arc:
+| Archetype | Track Pattern | Use Case |
+|-----------|--------------|----------|
+| The Shadow | `bgm_dark_high_drone_*` | Hidden mechanisms, looming danger, financial repression |
+| The Trap | `bgm_dark_high_drone_02` | Bad decisions, looming consequences |
+| The Cold Fact | `bgm_dark_high_minimal_*` | Brutal hooks, cold statistics |
+| The Panic | `bgm_dark_high_pulse_*` | Urgency, time pressure |
+| The Reckoning | `bgm_neutral_mid_slow_01` | Slow reveals, uncomfortable truths |
+| The Narrator | `bgm_neutral_mid_ambient_*` | Educational, neutral explanation |
+
+**Auto-Ducking Rules (Mandatory):**
+
+BGM volume is NEVER static. It MUST be a frame-level function with three zones:
+
+| Zone | Frames | Volume | Behaviour |
+|------|--------|--------|-----------|
+| **INTRO RAMP** | 0 → 15f | 0 → 0.45 | Fade in before narrator begins |
+| **VOICE DUCK** | 15f → (end-45f) | 0.18 | Reduced under active narration |
+| **OUTRO SWELL** | last 45f | 0.18 → 0.45 | Swell as narrator finishes |
+
+- `BGM_AMBIENT = 0.45` — full BGM level (only in silence zones)
+- `BGM_DUCKED = 0.18` — ducked level under narrator voice
+- Narration audio plays at **volume = 1.0** (never lower it — voice intelligibility is non-negotiable)
+- All `interpolate()` calls use `extrapolateLeft: "clamp", extrapolateRight: "clamp"`
+
+**Implementation:** The `volume` prop on Remotion's `<Audio>` component accepts a `(frame: number) => number` callback — use this for frame-accurate ducking. Never use a static number for BGM volume.
+
+### 12. SFX Foley Pipeline (Freesound Integration)
+
+Every composition MUST include Sound Effect (SFX) foley events synced to visual transitions and micro-animations. SFX are sourced from Freesound.org via API and cached per-topic.
+
+**SFX Event Type Definitions:**
+
+| Event Type | Visual Trigger | Freesound Query | Duration Filter | Default Volume |
+|---|---|---|---|---|
+| `STOMP_IMPACT` | Text STOMP/SLAM animation (STATEMENT scenes) | `sub bass impact boom cinematic` | 0.2–2.0s | 0.60 |
+| `HIGHLIGHTER_CIRCLE` | Archival Highlighter ellipse draw (Hold & Evolve) | `marker pen paper writing` | 0.3–2.0s | 0.35 |
+| `Z_AXIS_SWOOSH` | Z-Axis Portal transition exit | `cinematic whoosh dark deep` | 0.5–3.0s | 0.50 |
+| `FLASHBULB_SHUTTER` | Flashbulb transition overlay | `vintage camera shutter click` | 0.1–1.5s | 0.55 |
+| `REDACTION_REVEAL` | Redaction block slide-away (Hold & Evolve) | `file folder paper slide open` | 0.3–2.0s | 0.40 |
+| `INK_BLEED` | Ink Bleed transition mask | `ink liquid drip dark` | 0.3–2.5s | 0.35 |
+| `CHART_DRAW` | Chart line/bar draw animation start | `pen writing paper scratch fast` | 0.5–3.0s | 0.30 |
+
+**Trigger Frame Rules:**
+- **STOMP_IMPACT:** Fires at the scene's `HERO_WORD` cue frame (from AudioSyncMap)
+- **CHART_DRAW:** Fires at the scene's `CHART_DRAW_START` cue frame (SCENE_START + 15)
+- **HIGHLIGHTER_CIRCLE / REDACTION_REVEAL:** Fires at the Hold & Evolve trigger (local frame 90)
+- **Z_AXIS_SWOOSH / INK_BLEED / FLASHBULB_SHUTTER:** Fires at the transition exit window (sceneDuration - 30)
+
+**Volume Hierarchy (Final Mix):**
+```
+Narration:    1.00    (never reduced — voice intelligibility is sacred)
+SFX:          0.30–0.60  (per event type, defined in sfx-catalogue.json)
+BGM Ducked:   0.18    (under narration)
+BGM Ambient:  0.45    (intro/outro silence zones only)
+```
+
+**Freesound Search Strategy:**
+1. Search via `GET /apiv2/search/text/` with Token auth (no OAuth2 needed)
+2. Filter: `duration:[min TO max]`, `license:(Attribution OR "Creative Commons 0")`
+3. Sort: `rating_desc` — highest-rated sounds first
+4. Pick the top result; download its HQ preview MP3 (`previews.preview-hq-mp3`, ~128kbps)
+5. Save to `public/topics/{slug}/sfx/{EVENT_TYPE}.mp3`
+
+**Caching:** If `public/topics/{slug}/sfx/manifest.json` exists with all needed SFX files present, skip re-download. Delete manifest to force re-fetch.
+
+**License Compliance:** Only `Attribution` and `Creative Commons 0` licenses are acceptable. Credit all Freesound authors in video metadata / description.
+
+**Pipeline Integration:** SFX fetching runs as Stage 4.5 (between Pexels assets and Code Generation). Skip with `--skip-sfx` flag. The code generator produces `SfxMap.ts` mapping absolute frames → SFX file paths + volumes.
+
+**Composition Rendering:** Each SFX event renders as a `<Sequence from={absoluteFrame} layout="none"><Audio>` component, placed after the BGM layer in the compositing stack. The `layout="none"` prop ensures the Sequence doesn't create a DOM container.

@@ -1,0 +1,616 @@
+{
+  "meta": {
+    "title": "Resulting",
+    "slug": "resulting",
+    "archetype": "HIDDEN_MECHANISM"
+  },
+  "narration": "Your best decisions can produce your worst outcomes. That mistake has a name: Resulting. It quietly destroys fortunes. In 2015, one pass play lost the Seattle Seahawks the Super Bowl. Commentators called it the worst call in history. They were wrong. They judged the decision by the outcome instead of the odds. The hidden force is variance. Luck is just noise in the data. If you drive home drunk and survive, was it a good decision? Markets reward the lucky amateur and punish the disciplined professional. Over time, that incentive structure erodes real capital. Winners separate process from outcome. You evaluate the bet before the card is revealed. Stop judging results. Start thinking in bets.",
+  "bgm": {
+    "trackId": "bgm_dark_high_drone_01"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "narration": "Your best decisions can produce your worst outcomes.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Best Decisions",
+            "size": 88,
+            "color": "CREAM"
+          },
+          {
+            "text": "Worst Outcomes",
+            "size": 120,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "pexelsVideoQuery": "dice rolling slow motion dark table shadows",
+      "pexelsImageQuery": "roulette wheel casino chip close up macro",
+      "heroWord": "outcomes",
+      "connectiveWord": "BEST",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 001 \u2014 THE PARADOX",
+        "citation": "Outcome Bias, Clearer Thinking 2024"
+      }
+    },
+    {
+      "index": 2,
+      "narration": "That mistake has a name: Resulting.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "RESULTING",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "GOLD"
+          }
+        ],
+        "align": "center",
+        "stagger": 10
+      },
+      "declaration": {
+        "lines": [
+          {
+            "text": "Judge by results.",
+            "size": 52,
+            "color": "CREAM_DIM"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "pexelsVideoQuery": "black ink blot spreading paper slow motion",
+      "pexelsImageQuery": "error stamp red ink document close up",
+      "heroWord": "Resulting",
+      "microReset": {
+        "type": "REDACTION_REVEAL",
+        "label": "THE BIAS"
+      },
+      "source": {
+        "classification": "EXHIBIT 002 \u2014 THE NAME",
+        "citation": "Baron & Hershey (1988)"
+      }
+    },
+    {
+      "index": 3,
+      "narration": "It quietly destroys fortunes.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "DESTROYS",
+            "type": "HERO",
+            "animation": "REDACTION",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          },
+          {
+            "text": "FORTUNES",
+            "type": "HERO",
+            "animation": "SLIDE",
+            "weight": "BOLD",
+            "color": "CREAM"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "pexelsVideoQuery": "stock market crash graph red down dark",
+      "pexelsImageQuery": "burning money pile flames shadows",
+      "heroWord": "destroys",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 003 \u2014 THE COST",
+        "citation": "Wikipedia: Outcome Bias"
+      }
+    },
+    {
+      "index": 4,
+      "narration": "In 2015, one pass play lost the Seattle Seahawks the Super Bowl.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "STOP_MOTION",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Seahawks Pass",
+            "size": 72,
+            "color": "CREAM_DIM"
+          },
+          {
+            "text": "Super Bowl Loss",
+            "size": 96,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "evidence": {
+        "type": "VERDICT_CARD",
+        "leftLabel": "The Call",
+        "leftItems": [
+          "Goal Line",
+          "Pass Play"
+        ],
+        "rightLabel": "Outcome",
+        "rightItems": [
+          "Intercepted",
+          "Patriots Win"
+        ]
+      },
+      "pexelsVideoQuery": "american football stadium night crowd dark",
+      "pexelsImageQuery": "football field goal line tense moment",
+      "heroWord": "lost",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "right-panel"
+      },
+      "source": {
+        "classification": "EXHIBIT 004 \u2014 SUPER BOWL",
+        "citation": "NFL 2015 Analysis"
+      }
+    },
+    {
+      "index": 5,
+      "narration": "Commentators called it the worst call in history. They were wrong.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "WORST CALL",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "CREAM_DIM"
+          },
+          {
+            "text": "They Were",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "REGULAR",
+            "color": "CREAM_FAINT"
+          },
+          {
+            "text": "WRONG.",
+            "type": "HERO",
+            "animation": "REDACTION",
+            "weight": "BLACK",
+            "color": "GOLD"
+          }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "pexelsVideoQuery": "news ticker screen breaking dark studio",
+      "pexelsImageQuery": "microphone broadcast desk shadows",
+      "heroWord": "wrong",
+      "microReset": {
+        "type": "REDACTION_REVEAL",
+        "label": "OUTCOME BIAS"
+      },
+      "source": {
+        "classification": "EXHIBIT 005 \u2014 MEDIA ERROR",
+        "citation": "Clearer Thinking: Outcome Bias"
+      }
+    },
+    {
+      "index": 6,
+      "narration": "They judged the decision by the outcome instead of the odds.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          {
+            "text": "By Outcome",
+            "size": 72,
+            "color": "CREAM_DIM"
+          },
+          {
+            "text": "Not Odds",
+            "size": 96,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "Seahawks Goal Line Odds (%)",
+        "color": "GOLD",
+        "data": [
+          {
+            "label": "Run (Marshawn)",
+            "value": 70
+          },
+          {
+            "label": "Pass (Wilson)",
+            "value": 30,
+            "sublabel": "Chosen"
+          }
+        ],
+        "highlightLast": true
+      },
+      "pexelsVideoQuery": "probability chart flipping cards dark",
+      "pexelsImageQuery": "sports betting odds board neon",
+      "heroWord": "odds",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "chart-Pass"
+      },
+      "source": {
+        "classification": "EXHIBIT 006 \u2014 THE ODDS",
+        "citation": "NFL Analytics, 2015"
+      }
+    },
+    {
+      "index": 7,
+      "narration": "The hidden force is variance. Luck is just noise in the data.",
+      "heroType": "DATA_STATE",
+      "environment": "SIGNAL_GRID",
+      "layout": "DATA_VICE",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Variance",
+            "size": 88,
+            "color": "GOLD"
+          },
+          {
+            "text": "Noise",
+            "size": 72,
+            "color": "CREAM_DIM"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "Poker Hands vs Win Rate (%)",
+        "yUnit": "%",
+        "color": "OXBLOOD",
+        "data": [
+          {
+            "label": "100",
+            "value": 48
+          },
+          {
+            "label": "1K",
+            "value": 50
+          },
+          {
+            "label": "10K",
+            "value": 51
+          },
+          {
+            "label": "100K",
+            "value": 52
+          },
+          {
+            "label": "1M",
+            "value": 52.1
+          }
+        ],
+        "lineLabel": "EV + Noise"
+      },
+      "pexelsVideoQuery": "static noise tv screen glitch dark",
+      "pexelsImageQuery": "data scatter plot random variance",
+      "heroWord": "variance",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 007 \u2014 VARIANCE",
+        "citation": "Poker Variance Studies, 2024"
+      }
+    },
+    {
+      "index": 8,
+      "narration": "If you drive home drunk and survive, was it a good decision?",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "STOP_MOTION",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Drunk Drive",
+            "size": 80,
+            "color": "CREAM"
+          },
+          {
+            "text": "Survived?",
+            "size": 100,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 12
+      },
+      "evidence": {
+        "type": "VERDICT_CARD",
+        "leftLabel": "Process",
+        "leftItems": [
+          "Terrible Odds",
+          "High Risk"
+        ],
+        "rightLabel": "Outcome",
+        "rightItems": [
+          "Survived",
+          "Good Call?"
+        ]
+      },
+      "pexelsVideoQuery": "rainy night road headlights blur dark",
+      "pexelsImageQuery": "car wreck twisted metal night",
+      "heroWord": "good",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "right-panel"
+      },
+      "source": {
+        "classification": "EXHIBIT 008 \u2014 SURVIVOR BIAS",
+        "citation": "Outcome Bias Examples"
+      }
+    },
+    {
+      "index": 9,
+      "narration": "Markets reward the lucky amateur and punish the disciplined professional.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "OFFSET_STACK",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Lucky Amateur",
+            "size": 72,
+            "color": "GOLD"
+          },
+          {
+            "text": "Pro Punished",
+            "size": 88,
+            "color": "OXBLOOD"
+          }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "Hedge Fund Returns (1Y, %)",
+        "color": "GOLD",
+        "highlightLast": true,
+        "data": [
+          {
+            "label": "Avg Pro",
+            "value": 8
+          },
+          {
+            "label": "Discipline",
+            "value": 12
+          },
+          {
+            "label": "Lucky Fund",
+            "value": 45
+          }
+        ]
+      },
+      "pexelsVideoQuery": "stock ticker surging red green chaos",
+      "pexelsImageQuery": "trading floor panic sell orders",
+      "heroWord": "reward",
+      "microReset": {
+        "type": "REDACTION_REVEAL",
+        "label": "LUCK WINS"
+      },
+      "source": {
+        "classification": "EXHIBIT 009 \u2014 MARKET NOISE",
+        "citation": "HFR Index, 2024"
+      }
+    },
+    {
+      "index": 10,
+      "narration": "Over time, that incentive structure erodes real capital.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          {
+            "text": "ERODES",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "OXBLOOD"
+          },
+          {
+            "text": "REAL CAPITAL",
+            "type": "HERO",
+            "animation": "SLIDE",
+            "weight": "BOLD",
+            "color": "CREAM"
+          }
+        ],
+        "align": "center",
+        "stagger": 8
+      },
+      "dataTicker": {
+        "from": 100,
+        "to": 45,
+        "suffix": "%",
+        "decimals": 0,
+        "label": "Capital after 10Y Resulting",
+        "color": "OXBLOOD"
+      },
+      "pexelsVideoQuery": "sand slipping hourglass slow erosion",
+      "pexelsImageQuery": "cracked gold bar corrosion close up",
+      "heroWord": "erodes",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "EXHIBIT 010 \u2014 CAPITAL LOSS",
+        "citation": "McKinsey: Decision Biases"
+      }
+    },
+    {
+      "index": 11,
+      "narration": "Winners separate process from outcome.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "typography": {
+        "lines": [
+          {
+            "text": "PROCESS",
+            "type": "HERO",
+            "animation": "SLIDE",
+            "weight": "BLACK",
+            "color": "GOLD"
+          },
+          {
+            "text": "vs",
+            "type": "CONNECTIVE",
+            "animation": "SLIDE",
+            "weight": "LIGHT",
+            "color": "CREAM_FAINT"
+          },
+          {
+            "text": "OUTCOME",
+            "type": "HERO",
+            "animation": "STOMP",
+            "weight": "BLACK",
+            "color": "CREAM"
+          }
+        ],
+        "align": "center",
+        "stagger": 10
+      },
+      "pexelsVideoQuery": "chess board strategy move shadows",
+      "pexelsImageQuery": "poker player cards face calculation",
+      "heroWord": "separate",
+      "microReset": {
+        "type": "HIGHLIGHTER",
+        "targetElement": "PROCESS"
+      },
+      "source": {
+        "classification": "EXHIBIT 011 \u2014 WINNER'S EDGE",
+        "citation": "Thinking in Bets, Duke 2018"
+      }
+    },
+    {
+      "index": 12,
+      "narration": "You evaluate the bet before the card is revealed. Stop judging results. Start thinking in bets.",
+      "heroType": "HERO_VIDEO",
+      "environment": "IMMERSIVE_BLEED",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          {
+            "text": "Think in Bets",
+            "size": 96,
+            "color": "GOLD"
+          },
+          {
+            "text": "Before Results",
+            "size": 72,
+            "color": "CREAM"
+          }
+        ],
+        "lineStagger": 14
+      },
+      "pexelsVideoQuery": "poker cards reveal slow motion dark velvet",
+      "pexelsImageQuery": "ace card hidden shadow reveal",
+      "heroWord": "bets",
+      "microReset": {
+        "type": "Z_PUNCH_IN"
+      },
+      "source": {
+        "classification": "CLASSIFIED \u2014 FINAL VERDICT",
+        "citation": "Project Variance Shield"
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": 1,
+      "to": 2,
+      "type": "Z_AXIS_PORTAL"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "type": "INFINITE_DESK_DOWN"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "type": "INK_BLEED"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "type": "INFINITE_DESK_RIGHT"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "type": "INFINITE_DESK_DOWN"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "type": "INFINITE_DESK_LEFT"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "type": "FLASHBULB"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "type": "INK_BLEED"
+    }
+  ]
+}

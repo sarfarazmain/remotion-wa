@@ -1,0 +1,19 @@
+# WARP Dashboard — Docker Compose
+# Usage: docker compose up --build
+# Then open http://localhost:8501
+
+services:
+  dashboard:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - NODE_OPTIONS=--max-old-space-size=8192
+    volumes:
+      # Persist rendered outputs and topic data between runs
+      - ./out:/app/out
+      - ./public/topics:/app/public/topics
+      - ./topics:/app/topics
+    restart: unless-stopped

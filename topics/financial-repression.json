@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "title": "Financial Repression",
+    "slug": "financial-repression",
+    "archetype": "HIDDEN_MECHANISM"
+  },
+
+  "narration": "The greatest theft in history won't happen at gunpoint. It will happen through a mechanism called Financial Repression. We believe markets set the price of money. We are wrong. The state has seized the levers of credit. Central banks are no longer in charge. Politicians are. The goal is simple: Inflate the debt away. By keeping interest rates low and inflation high, your savings vanish. It is a 4% annual tax on your purchasing power. The debt to GDP ratio demands it. There is no other exit. Capital will be forced into government bonds by law. The free market in money is dead. CAPEX is the new king. The ink is already dry. Your gold is now your shield.",
+
+  "bgm": {
+    "trackId": "bgm_dark_high_drone_01"
+  },
+
+  "scenes": [
+    {
+      "index": 1,
+      "narration": "The greatest theft in history won't happen at gunpoint.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          { "text": "The Greatest", "size": 88, "color": "CREAM" },
+          { "text": "Theft.", "size": 120, "color": "GOLD" }
+        ],
+        "lineStagger": 12
+      },
+      "pexelsVideoQuery": "gold coin submerged black ink viscous slow motion",
+      "pexelsImageQuery": "hammered gold coin close up texture macro",
+      "heroWord": "theft",
+      "connectiveWord": "THE",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 001 — THE THEFT",
+        "citation": "Financial Repression, 2024"
+      }
+    },
+    {
+      "index": 2,
+      "narration": "It will happen through a mechanism called Financial Repression.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          { "text": "FINANCIAL", "type": "HERO", "animation": "STOMP", "weight": "BLACK", "color": "GOLD" },
+          { "text": "REPRESSION", "type": "HERO", "animation": "REDACTION", "weight": "BLACK", "color": "OXBLOOD" }
+        ],
+        "align": "flex-start",
+        "stagger": 10
+      },
+      "declaration": {
+        "lines": [
+          { "text": "A mechanism.", "size": 52, "color": "CREAM_DIM" }
+        ],
+        "lineStagger": 10
+      },
+      "pexelsVideoQuery": "iron vault door steel industrial dark",
+      "pexelsImageQuery": "vault door lock mechanism close up",
+      "heroWord": "Repression",
+      "microReset": { "type": "REDACTION_REVEAL", "label": "THE MECHANISM" },
+      "source": {
+        "classification": "EXHIBIT 002 — DEFINITION",
+        "citation": "IMF Economic Review, 2023"
+      }
+    },
+    {
+      "index": 3,
+      "narration": "We believe markets set the price of money. We are wrong.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          { "text": "MARKETS", "type": "HERO", "animation": "SLIDE", "weight": "BOLD", "color": "CREAM_DIM" },
+          { "text": "SET PRICE.", "type": "HERO", "animation": "SLIDE", "weight": "BLACK", "color": "CREAM" }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "declaration": {
+        "lines": [
+          { "text": "We are wrong.", "size": 72, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 10
+      },
+      "pexelsVideoQuery": "trading floor terminal dust abandoned dark",
+      "pexelsImageQuery": "stock market trading screen close up",
+      "heroWord": "wrong",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 003 — THE MYTH",
+        "citation": "Source: Reinhart & Sbrancia (2015)"
+      }
+    },
+    {
+      "index": 4,
+      "narration": "The state has seized the levers of credit.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          { "text": "THE STATE", "type": "HERO", "animation": "STOMP", "weight": "BLACK", "color": "OXBLOOD" },
+          { "text": "SEIZED", "type": "HERO", "animation": "REDACTION", "weight": "BLACK", "color": "GOLD" },
+          { "text": "CREDIT.", "type": "HERO", "animation": "SLIDE", "weight": "BOLD", "color": "CREAM" }
+        ],
+        "align": "flex-start",
+        "stagger": 8
+      },
+      "pexelsVideoQuery": "fountain pen ink ledger paper dark",
+      "pexelsImageQuery": "government building columns authority classic",
+      "heroWord": "seized",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 004 — STATE CAPTURE",
+        "citation": "Source: BIS Working Papers, 2023"
+      }
+    },
+    {
+      "index": 5,
+      "narration": "Central banks are no longer in charge. Politicians are.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "STOP_MOTION",
+      "declaration": {
+        "lines": [
+          { "text": "Not The Banks.", "size": 72, "color": "CREAM_DIM" },
+          { "text": "Politicians.", "size": 96, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 12
+      },
+      "evidence": {
+        "type": "VERDICT_CARD",
+        "leftLabel": "Then",
+        "leftItems": ["Central Banks", "Rate independence"],
+        "rightLabel": "Now",
+        "rightItems": ["Politicians", "Fiscal dominance"]
+      },
+      "pexelsVideoQuery": "mahogany gavel concrete slab courtroom dark",
+      "pexelsImageQuery": "politicians government meeting vote",
+      "heroWord": "Politicians",
+      "microReset": { "type": "HIGHLIGHTER", "targetElement": "right-panel" },
+      "source": {
+        "classification": "EXHIBIT 005 — POWER SHIFT",
+        "citation": "Source: IMF Fiscal Monitor, 2024"
+      }
+    },
+    {
+      "index": 6,
+      "narration": "The goal is simple: Inflate the debt away.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "Inflate.", "size": 96, "color": "OXBLOOD" },
+          { "text": "The Debt Away.", "size": 72, "color": "CREAM_DIM" }
+        ],
+        "lineStagger": 10
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "US Debt-to-GDP Ratio (%)",
+        "lineLabel": "DEBT BURDEN",
+        "color": "OXBLOOD",
+        "data": [
+          { "label": "2000", "value": 55 },
+          { "label": "2008", "value": 68 },
+          { "label": "2012", "value": 99 },
+          { "label": "2016", "value": 105 },
+          { "label": "2020", "value": 127 },
+          { "label": "2022", "value": 121 },
+          { "label": "2024", "value": 123 }
+        ]
+      },
+      "pexelsVideoQuery": "dollar bills burning ash dark fire",
+      "pexelsImageQuery": "national debt clock digital display",
+      "heroWord": "Inflate",
+      "microReset": { "type": "HIGHLIGHTER", "targetElement": "chart-2020" },
+      "source": {
+        "classification": "EXHIBIT 006 — THE GOAL",
+        "citation": "Source: Congressional Budget Office, 2024"
+      }
+    },
+    {
+      "index": 7,
+      "narration": "By keeping interest rates low and inflation high, your savings vanish.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "Savings.", "size": 88, "color": "CREAM" },
+          { "text": "Vanish.", "size": 100, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 12
+      },
+      "chart": {
+        "type": "LINE",
+        "title": "Real Interest Rate vs CPI (%)",
+        "lineLabel": "REAL RATE",
+        "color": "GOLD",
+        "data": [
+          { "label": "2010", "value": 1.8 },
+          { "label": "2013", "value": 0.4 },
+          { "label": "2016", "value": -0.2 },
+          { "label": "2019", "value": 0.6 },
+          { "label": "2021", "value": -5.1 },
+          { "label": "2022", "value": -4.6 },
+          { "label": "2024", "value": -0.8 }
+        ],
+        "secondLine": {
+          "label": "CPI",
+          "color": "OXBLOOD",
+          "data": [
+            { "label": "2010", "value": 1.6 },
+            { "label": "2013", "value": 1.5 },
+            { "label": "2016", "value": 2.1 },
+            { "label": "2019", "value": 2.3 },
+            { "label": "2021", "value": 7.0 },
+            { "label": "2022", "value": 8.0 },
+            { "label": "2024", "value": 3.4 }
+          ]
+        }
+      },
+      "pexelsVideoQuery": "hourglass sand slow motion dark minimal",
+      "pexelsImageQuery": "savings bank account interest rate low",
+      "heroWord": "vanish",
+      "microReset": { "type": "REDACTION_REVEAL", "label": "NEGATIVE REAL" },
+      "source": {
+        "classification": "EXHIBIT 007 — SAVINGS EROSION",
+        "citation": "Source: St. Louis Fed (FRED), 2024"
+      }
+    },
+    {
+      "index": 8,
+      "narration": "It is a 4% annual tax on your purchasing power.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "typography": {
+        "lines": [
+          { "text": "A 4% TAX.", "type": "HERO", "animation": "STOMP", "weight": "BLACK", "color": "OXBLOOD" }
+        ],
+        "align": "center",
+        "stagger": 8
+      },
+      "dataTicker": {
+        "from": 0,
+        "to": 4.0,
+        "suffix": "% yr",
+        "decimals": 1,
+        "label": "Annual tax on your purchasing power",
+        "color": "OXBLOOD"
+      },
+      "pexelsVideoQuery": "scissors cutting paper money dark industrial",
+      "pexelsImageQuery": "tax form receipt numbers close up",
+      "heroWord": "tax",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "EXHIBIT 008 — THE TAX",
+        "citation": "Source: BIS Quarterly Review, 2024"
+      }
+    },
+    {
+      "index": 9,
+      "narration": "The debt to GDP ratio demands it. There is no other exit.",
+      "heroType": "DATA_STATE",
+      "environment": "VOID",
+      "layout": "DATA_VICE",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "No Exit.", "size": 96, "color": "GOLD" },
+          { "text": "No Other Way.", "size": 72, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 12
+      },
+      "chart": {
+        "type": "BAR",
+        "title": "G7 Debt-to-GDP (%)",
+        "color": "OXBLOOD",
+        "highlightLast": true,
+        "data": [
+          { "label": "Japan", "value": 261 },
+          { "label": "Italy", "value": 137 },
+          { "label": "USA", "value": 123 },
+          { "label": "France", "value": 112 },
+          { "label": "UK", "value": 101, "sublabel": "↑" }
+        ]
+      },
+      "pexelsVideoQuery": "chalkboard equations dark classroom minimal",
+      "pexelsImageQuery": "debt clock government bonds financial data",
+      "heroWord": "exit",
+      "microReset": { "type": "HIGHLIGHTER", "targetElement": "chart-USA" },
+      "source": {
+        "classification": "EXHIBIT 009 — NO EXIT",
+        "citation": "Source: IMF World Economic Outlook, 2024"
+      }
+    },
+    {
+      "index": 10,
+      "narration": "Capital will be forced into government bonds by law.",
+      "heroType": "EVIDENCE_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "STOP_MOTION",
+      "declaration": {
+        "lines": [
+          { "text": "Forced.", "size": 100, "color": "OXBLOOD" },
+          { "text": "By Law.", "size": 80, "color": "CREAM_DIM" }
+        ],
+        "lineStagger": 12
+      },
+      "evidence": {
+        "type": "FLOW_ARROW",
+        "fromLabel": "YOUR CAPITAL",
+        "toLabel": "GOVT BONDS",
+        "throughLabel": "LAW"
+      },
+      "pexelsVideoQuery": "iron chain wrapping leather books dark industrial",
+      "pexelsImageQuery": "government bond certificate treasury document",
+      "heroWord": "forced",
+      "microReset": { "type": "REDACTION_REVEAL", "label": "FINANCIAL REPRESSION" },
+      "source": {
+        "classification": "EXHIBIT 010 — FORCED CAPITAL",
+        "citation": "Source: Reinhart & Sbrancia, Journal of Economic Perspectives"
+      }
+    },
+    {
+      "index": 11,
+      "narration": "The free market in money is dead. CAPEX is the new king.",
+      "heroType": "STATEMENT_STATE",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "SLAM",
+      "declaration": {
+        "lines": [
+          { "text": "Free Market:", "size": 64, "color": "CREAM_DIM" },
+          { "text": "Dead.", "size": 100, "color": "OXBLOOD" }
+        ],
+        "lineStagger": 10
+      },
+      "evidence": {
+        "type": "STAT_LINES",
+        "stats": [
+          { "label": "Cash (Real)", "value": "−4%", "color": "OXBLOOD" },
+          { "label": "Bonds (Real)", "value": "−2%", "color": "OXBLOOD" },
+          { "label": "Real Assets", "value": "+8%", "color": "GOLD" },
+          { "label": "CAPEX", "value": "+14%", "color": "GOLD" }
+        ]
+      },
+      "pexelsVideoQuery": "green sprout concrete crack factory light",
+      "pexelsImageQuery": "industrial capital investment factory modern",
+      "heroWord": "CAPEX",
+      "microReset": { "type": "HIGHLIGHTER", "targetElement": "CAPEX" },
+      "source": {
+        "classification": "EXHIBIT 011 — NEW ORDER",
+        "citation": "Source: Goldman Sachs Research, 2024"
+      }
+    },
+    {
+      "index": 12,
+      "narration": "The ink is already dry. Your gold is now your shield.",
+      "heroType": "HERO_VIDEO",
+      "environment": "VOID",
+      "layout": "FULL_BLEED",
+      "physics": "GLIDE",
+      "declaration": {
+        "lines": [
+          { "text": "Your Gold.", "size": 88, "color": "GOLD" },
+          { "text": "Your Shield.", "size": 100, "color": "CREAM" }
+        ],
+        "lineStagger": 14
+      },
+      "pexelsVideoQuery": "gold coin shining spotlight dry clean minimal",
+      "pexelsImageQuery": "gold bars vault shine luxury close up",
+      "heroWord": "shield",
+      "microReset": { "type": "Z_PUNCH_IN" },
+      "source": {
+        "classification": "CLASSIFIED — FINAL VERDICT",
+        "citation": "Project Spinning Halley"
+      }
+    }
+  ],
+
+  "transitions": [
+    { "from": 1, "to": 2, "type": "Z_AXIS_PORTAL" },
+    { "from": 2, "to": 3, "type": "INFINITE_DESK_LEFT" },
+    { "from": 3, "to": 4, "type": "INFINITE_DESK_LEFT" },
+    { "from": 4, "to": 5, "type": "INFINITE_DESK_DOWN" },
+    { "from": 5, "to": 6, "type": "INK_BLEED" },
+    { "from": 6, "to": 7, "type": "INFINITE_DESK_LEFT" },
+    { "from": 7, "to": 8, "type": "INFINITE_DESK_LEFT" },
+    { "from": 8, "to": 9, "type": "INFINITE_DESK_DOWN" },
+    { "from": 9, "to": 10, "type": "INFINITE_DESK_LEFT" },
+    { "from": 10, "to": 11, "type": "INK_BLEED" },
+    { "from": 11, "to": 12, "type": "FLASHBULB" }
+  ]
+}

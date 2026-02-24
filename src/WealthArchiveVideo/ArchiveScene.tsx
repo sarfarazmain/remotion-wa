@@ -46,6 +46,8 @@ interface ArchiveSceneProps {
     microReset?: MicroResetType;
     /** Optional label for REDACTION_REVEAL micro-reset */
     microResetLabel?: string;
+    /** Optional: semantic target element for HIGHLIGHTER positioning */
+    highlighterTarget?: string;
 
     // HUD Metadata override
     hudTimestamp?: string;
@@ -69,6 +71,7 @@ export const ArchiveScene: React.FC<ArchiveSceneProps> = ({
     sceneDuration,
     microReset = "Z_PUNCH_IN",
     microResetLabel,
+    highlighterTarget,
     hudTimestamp,
     hudCitation,
 }) => {
@@ -420,6 +423,7 @@ export const ArchiveScene: React.FC<ArchiveSceneProps> = ({
                         triggerAt={PACING.HOLD_EVOLVE_AT}
                         duration={sceneDuration}
                         revealLabel={microResetLabel}
+                        highlighterTarget={highlighterTarget}
                     />
                 )}
 

@@ -1,758 +1,782 @@
 [
   {
     "id": 0,
-    "start": 0.0,
-    "end": 6.14,
+    "start": 0,
+    "end": 5.9,
     "text": "Central banks are not printing money anymore. The government is. The Fed isn't leading the market.",
     "words": [
       {
         "word": "Central",
-        "start": 0.0,
+        "start": 0,
         "end": 0.4
       },
       {
         "word": "banks",
         "start": 0.4,
-        "end": 0.66
+        "end": 0.7
       },
       {
         "word": "are",
-        "start": 0.66,
-        "end": 0.82
+        "start": 0.7,
+        "end": 1.02
       },
       {
         "word": "not",
-        "start": 0.82,
-        "end": 0.94
-      },
-      {
-        "word": "printing",
-        "start": 0.94,
+        "start": 1.02,
         "end": 1.22
       },
       {
-        "word": "money",
+        "word": "printing",
         "start": 1.22,
         "end": 1.56
       },
       {
-        "word": "anymore.",
+        "word": "money",
         "start": 1.56,
-        "end": 2.02
+        "end": 2
+      },
+      {
+        "word": "anymore.",
+        "start": 2,
+        "end": 2.46
       },
       {
         "word": "The",
-        "start": 2.62,
-        "end": 2.7
+        "start": 2.94,
+        "end": 3.02
       },
       {
         "word": "government",
-        "start": 2.7,
-        "end": 3.04
+        "start": 3.02,
+        "end": 3.42
       },
       {
         "word": "is.",
-        "start": 3.04,
-        "end": 3.36
+        "start": 3.42,
+        "end": 3.72
       },
       {
         "word": "The",
-        "start": 4.14,
-        "end": 4.3
+        "start": 4.3,
+        "end": 4.46
       },
       {
         "word": "Fed",
-        "start": 4.3,
-        "end": 4.58
+        "start": 4.46,
+        "end": 4.7
       },
       {
         "word": "isn't",
-        "start": 4.58,
-        "end": 5.28
+        "start": 4.7,
+        "end": 5.08
       },
       {
         "word": "leading",
-        "start": 5.28,
-        "end": 5.56
+        "start": 5.08,
+        "end": 5.32
       },
       {
         "word": "the",
-        "start": 5.56,
-        "end": 5.76
+        "start": 5.32,
+        "end": 5.54
       },
       {
         "word": "market.",
-        "start": 5.76,
-        "end": 6.14
+        "start": 5.54,
+        "end": 5.9
       }
     ]
   },
   {
     "id": 1,
-    "start": 6.64,
-    "end": 14.62,
-    "text": "It is chasing a moving tiger. For a decade, we believed low rates were the only engine of growth.",
+    "start": 6.24,
+    "end": 7.98,
+    "text": "It is chasing a moving tiger.",
     "words": [
       {
         "word": "It",
-        "start": 6.64,
-        "end": 6.74
+        "start": 6.24,
+        "end": 6.32
       },
       {
         "word": "is",
-        "start": 6.74,
-        "end": 6.86
+        "start": 6.32,
+        "end": 6.44
       },
       {
         "word": "chasing",
-        "start": 6.86,
-        "end": 7.32
+        "start": 6.44,
+        "end": 6.86
       },
       {
         "word": "a",
-        "start": 7.32,
-        "end": 7.84
+        "start": 6.86,
+        "end": 7.14
       },
       {
         "word": "moving",
-        "start": 7.84,
-        "end": 8.42
+        "start": 7.14,
+        "end": 7.54
       },
       {
         "word": "tiger.",
-        "start": 8.42,
-        "end": 9.1
-      },
-      {
-        "word": "For",
-        "start": 10.08,
-        "end": 10.46
-      },
-      {
-        "word": "a",
-        "start": 10.46,
-        "end": 10.56
-      },
-      {
-        "word": "decade,",
-        "start": 10.56,
-        "end": 10.94
-      },
-      {
-        "word": "we",
-        "start": 11.32,
-        "end": 11.54
-      },
-      {
-        "word": "believed",
-        "start": 11.54,
-        "end": 11.96
-      },
-      {
-        "word": "low",
-        "start": 11.96,
-        "end": 12.22
-      },
-      {
-        "word": "rates",
-        "start": 12.22,
-        "end": 12.54
-      },
-      {
-        "word": "were",
-        "start": 12.54,
-        "end": 13.16
-      },
-      {
-        "word": "the",
-        "start": 13.16,
-        "end": 13.28
-      },
-      {
-        "word": "only",
-        "start": 13.28,
-        "end": 13.66
-      },
-      {
-        "word": "engine",
-        "start": 13.66,
-        "end": 14.04
-      },
-      {
-        "word": "of",
-        "start": 14.04,
-        "end": 14.24
-      },
-      {
-        "word": "growth.",
-        "start": 14.24,
-        "end": 14.62
+        "start": 7.54,
+        "end": 7.98
       }
     ]
   },
   {
     "id": 2,
-    "start": 15.54,
-    "end": 19.72,
-    "text": "Investors grew addicted to cheap debt and artificial stability.",
+    "start": 8.74,
+    "end": 12.66,
+    "text": "For a decade, we believed low rates were the only engine of growth.",
     "words": [
       {
-        "word": "Investors",
-        "start": 15.54,
-        "end": 16.14
+        "word": "For",
+        "start": 8.74,
+        "end": 9.08
       },
       {
-        "word": "grew",
-        "start": 16.14,
-        "end": 16.42
+        "word": "a",
+        "start": 9.08,
+        "end": 9.18
       },
       {
-        "word": "addicted",
-        "start": 16.42,
-        "end": 16.74
+        "word": "decade,",
+        "start": 9.18,
+        "end": 9.56
       },
       {
-        "word": "to",
-        "start": 16.74,
-        "end": 16.96
+        "word": "we",
+        "start": 9.94,
+        "end": 10.04
       },
       {
-        "word": "cheap",
-        "start": 16.96,
-        "end": 17.2
+        "word": "believed",
+        "start": 10.04,
+        "end": 10.42
       },
       {
-        "word": "debt",
-        "start": 17.2,
-        "end": 17.54
+        "word": "low",
+        "start": 10.42,
+        "end": 10.72
       },
       {
-        "word": "and",
-        "start": 17.54,
-        "end": 18.54
+        "word": "rates",
+        "start": 10.72,
+        "end": 11.06
       },
       {
-        "word": "artificial",
-        "start": 18.54,
-        "end": 18.98
+        "word": "were",
+        "start": 11.06,
+        "end": 11.26
       },
       {
-        "word": "stability.",
-        "start": 18.98,
-        "end": 19.72
+        "word": "the",
+        "start": 11.26,
+        "end": 11.38
+      },
+      {
+        "word": "only",
+        "start": 11.38,
+        "end": 11.76
+      },
+      {
+        "word": "engine",
+        "start": 11.76,
+        "end": 12.16
+      },
+      {
+        "word": "of",
+        "start": 12.16,
+        "end": 12.34
+      },
+      {
+        "word": "growth.",
+        "start": 12.34,
+        "end": 12.66
       }
     ]
   },
   {
     "id": 3,
-    "start": 20.4,
-    "end": 27.52,
-    "text": "But in the current cycle, the engine changed. Fiscal dominance arrived. Governments are now",
+    "start": 13.32,
+    "end": 16.96,
+    "text": "Investors grew addicted to cheap debt and artificial stability.",
     "words": [
       {
-        "word": "But",
-        "start": 20.4,
-        "end": 21.12
+        "word": "Investors",
+        "start": 13.32,
+        "end": 13.82
       },
       {
-        "word": "in",
-        "start": 21.12,
-        "end": 21.24
+        "word": "grew",
+        "start": 13.82,
+        "end": 14.08
       },
       {
-        "word": "the",
-        "start": 21.24,
-        "end": 21.34
+        "word": "addicted",
+        "start": 14.08,
+        "end": 14.58
       },
       {
-        "word": "current",
-        "start": 21.34,
-        "end": 21.54
+        "word": "to",
+        "start": 14.58,
+        "end": 14.82
       },
       {
-        "word": "cycle,",
-        "start": 21.54,
-        "end": 21.98
+        "word": "cheap",
+        "start": 14.82,
+        "end": 15.06
       },
       {
-        "word": "the",
-        "start": 22.6,
-        "end": 22.66
+        "word": "debt",
+        "start": 15.06,
+        "end": 15.38
       },
       {
-        "word": "engine",
-        "start": 22.66,
-        "end": 22.98
+        "word": "and",
+        "start": 15.38,
+        "end": 15.78
       },
       {
-        "word": "changed.",
-        "start": 22.98,
-        "end": 23.84
+        "word": "artificial",
+        "start": 15.78,
+        "end": 16.24
       },
       {
-        "word": "Fiscal",
-        "start": 24.48,
-        "end": 24.88
-      },
-      {
-        "word": "dominance",
-        "start": 24.88,
-        "end": 25.34
-      },
-      {
-        "word": "arrived.",
-        "start": 25.34,
-        "end": 25.96
-      },
-      {
-        "word": "Governments",
-        "start": 26.78,
-        "end": 27.24
-      },
-      {
-        "word": "are",
-        "start": 27.24,
-        "end": 27.36
-      },
-      {
-        "word": "now",
-        "start": 27.36,
-        "end": 27.52
+        "word": "stability.",
+        "start": 16.24,
+        "end": 16.96
       }
     ]
   },
   {
     "id": 4,
-    "start": 27.52,
-    "end": 35.04,
-    "text": "bypassing banks to inject capital directly into the economy. Inflation is a policy choice,",
+    "start": 17.5,
+    "end": 21.8,
+    "text": "But in the current cycle, the engine changed. Fiscal dominance arrived.",
     "words": [
       {
-        "word": "bypassing",
-        "start": 27.52,
-        "end": 28.28
+        "word": "But",
+        "start": 17.5,
+        "end": 17.86
       },
       {
-        "word": "banks",
-        "start": 28.28,
-        "end": 28.7
-      },
-      {
-        "word": "to",
-        "start": 28.7,
-        "end": 29.22
-      },
-      {
-        "word": "inject",
-        "start": 29.22,
-        "end": 29.52
-      },
-      {
-        "word": "capital",
-        "start": 29.52,
-        "end": 30.12
-      },
-      {
-        "word": "directly",
-        "start": 30.12,
-        "end": 30.92
-      },
-      {
-        "word": "into",
-        "start": 30.92,
-        "end": 31.48
+        "word": "in",
+        "start": 17.86,
+        "end": 17.96
       },
       {
         "word": "the",
-        "start": 31.48,
-        "end": 31.66
+        "start": 17.96,
+        "end": 18.04
       },
       {
-        "word": "economy.",
-        "start": 31.66,
-        "end": 32.24
+        "word": "current",
+        "start": 18.04,
+        "end": 18.28
       },
       {
-        "word": "Inflation",
-        "start": 32.94,
-        "end": 33.44
+        "word": "cycle,",
+        "start": 18.28,
+        "end": 18.68
       },
       {
-        "word": "is",
-        "start": 33.44,
-        "end": 33.98
+        "word": "the",
+        "start": 18.98,
+        "end": 19.06
       },
       {
-        "word": "a",
-        "start": 33.98,
-        "end": 34.1
+        "word": "engine",
+        "start": 19.06,
+        "end": 19.44
       },
       {
-        "word": "policy",
-        "start": 34.1,
-        "end": 34.48
+        "word": "changed.",
+        "start": 19.44,
+        "end": 20.1
       },
       {
-        "word": "choice,",
-        "start": 34.48,
-        "end": 35.04
+        "word": "Fiscal",
+        "start": 20.44,
+        "end": 20.7
+      },
+      {
+        "word": "dominance",
+        "start": 20.7,
+        "end": 21.24
+      },
+      {
+        "word": "arrived.",
+        "start": 21.24,
+        "end": 21.8
       }
     ]
   },
   {
     "id": 5,
-    "start": 35.7,
-    "end": 43.72,
-    "text": "not an accident of the supply chain. Zombie companies are dying because their 2% debt is now a trap.",
+    "start": 22.7,
+    "end": 27.22,
+    "text": "Governments are now bypassing banks to inject capital directly into the economy.",
     "words": [
       {
-        "word": "not",
-        "start": 35.7,
-        "end": 35.96
-      },
-      {
-        "word": "an",
-        "start": 35.96,
-        "end": 36.14
-      },
-      {
-        "word": "accident",
-        "start": 36.14,
-        "end": 36.54
-      },
-      {
-        "word": "of",
-        "start": 36.54,
-        "end": 36.78
-      },
-      {
-        "word": "the",
-        "start": 36.78,
-        "end": 36.86
-      },
-      {
-        "word": "supply",
-        "start": 36.86,
-        "end": 37.2
-      },
-      {
-        "word": "chain.",
-        "start": 37.2,
-        "end": 37.7
-      },
-      {
-        "word": "Zombie",
-        "start": 38.74,
-        "end": 39.12
-      },
-      {
-        "word": "companies",
-        "start": 39.12,
-        "end": 39.66
+        "word": "Governments",
+        "start": 22.7,
+        "end": 23.18
       },
       {
         "word": "are",
-        "start": 39.66,
-        "end": 39.88
-      },
-      {
-        "word": "dying",
-        "start": 39.88,
-        "end": 40.28
-      },
-      {
-        "word": "because",
-        "start": 40.28,
-        "end": 41.04
-      },
-      {
-        "word": "their",
-        "start": 41.04,
-        "end": 41.3
-      },
-      {
-        "word": "2",
-        "start": 41.3,
-        "end": 41.6
-      },
-      {
-        "word": "%",
-        "start": 41.6,
-        "end": 41.9
-      },
-      {
-        "word": "debt",
-        "start": 41.9,
-        "end": 42.24
-      },
-      {
-        "word": "is",
-        "start": 42.24,
-        "end": 42.88
+        "start": 23.18,
+        "end": 23.3
       },
       {
         "word": "now",
-        "start": 42.88,
-        "end": 43.14
+        "start": 23.3,
+        "end": 23.48
       },
       {
-        "word": "a",
-        "start": 43.14,
-        "end": 43.28
+        "word": "bypassing",
+        "start": 23.48,
+        "end": 24.26
       },
       {
-        "word": "trap.",
-        "start": 43.28,
-        "end": 43.72
+        "word": "banks",
+        "start": 24.26,
+        "end": 24.54
+      },
+      {
+        "word": "to",
+        "start": 24.54,
+        "end": 24.78
+      },
+      {
+        "word": "inject",
+        "start": 24.78,
+        "end": 25.04
+      },
+      {
+        "word": "capital",
+        "start": 25.04,
+        "end": 25.62
+      },
+      {
+        "word": "directly",
+        "start": 25.62,
+        "end": 26.04
+      },
+      {
+        "word": "into",
+        "start": 26.04,
+        "end": 26.52
+      },
+      {
+        "word": "the",
+        "start": 26.52,
+        "end": 26.7
+      },
+      {
+        "word": "economy.",
+        "start": 26.7,
+        "end": 27.22
       }
     ]
   },
   {
     "id": 6,
-    "start": 44.8,
-    "end": 49.8,
-    "text": "Real assets win when the currency is devalued to fund deficits.",
+    "start": 27.84,
+    "end": 31.7,
+    "text": "Inflation is a policy choice, not an accident of the supply chain.",
     "words": [
       {
-        "word": "Real",
-        "start": 44.8,
-        "end": 45.14
-      },
-      {
-        "word": "assets",
-        "start": 45.14,
-        "end": 45.52
-      },
-      {
-        "word": "win",
-        "start": 45.52,
-        "end": 45.96
-      },
-      {
-        "word": "when",
-        "start": 45.96,
-        "end": 46.62
-      },
-      {
-        "word": "the",
-        "start": 46.62,
-        "end": 46.74
-      },
-      {
-        "word": "currency",
-        "start": 46.74,
-        "end": 47.18
+        "word": "Inflation",
+        "start": 27.84,
+        "end": 28.34
       },
       {
         "word": "is",
-        "start": 47.18,
-        "end": 47.54
+        "start": 28.34,
+        "end": 28.56
       },
       {
-        "word": "devalued",
-        "start": 47.54,
-        "end": 48.42
+        "word": "a",
+        "start": 28.56,
+        "end": 28.66
       },
       {
-        "word": "to",
-        "start": 48.42,
-        "end": 48.78
+        "word": "policy",
+        "start": 28.66,
+        "end": 29.06
       },
       {
-        "word": "fund",
-        "start": 48.78,
-        "end": 49.18
+        "word": "choice,",
+        "start": 29.06,
+        "end": 29.64
       },
       {
-        "word": "deficits.",
-        "start": 49.18,
-        "end": 49.8
+        "word": "not",
+        "start": 29.8,
+        "end": 29.98
+      },
+      {
+        "word": "an",
+        "start": 29.98,
+        "end": 30.16
+      },
+      {
+        "word": "accident",
+        "start": 30.16,
+        "end": 30.62
+      },
+      {
+        "word": "of",
+        "start": 30.62,
+        "end": 30.84
+      },
+      {
+        "word": "the",
+        "start": 30.84,
+        "end": 30.94
+      },
+      {
+        "word": "supply",
+        "start": 30.94,
+        "end": 31.28
+      },
+      {
+        "word": "chain.",
+        "start": 31.28,
+        "end": 31.7
       }
     ]
   },
   {
     "id": 7,
-    "start": 50.86,
-    "end": 61.42,
-    "text": "Wealth is being redistributed from the saver to the spender. The risk is no longer a crash. It is a slow, hot burn.",
+    "start": 32.36,
+    "end": 36.5,
+    "text": "Zombie companies are dying because their 2% debt is now a trap.",
     "words": [
       {
-        "word": "Wealth",
-        "start": 50.86,
-        "end": 51.52
+        "word": "Zombie",
+        "start": 32.36,
+        "end": 32.7
+      },
+      {
+        "word": "companies",
+        "start": 32.7,
+        "end": 33.12
+      },
+      {
+        "word": "are",
+        "start": 33.12,
+        "end": 33.46
+      },
+      {
+        "word": "dying",
+        "start": 33.46,
+        "end": 33.92
+      },
+      {
+        "word": "because",
+        "start": 33.92,
+        "end": 34.38
+      },
+      {
+        "word": "their",
+        "start": 34.38,
+        "end": 34.58
+      },
+      {
+        "word": "2",
+        "start": 34.58,
+        "end": 34.86
+      },
+      {
+        "word": "%",
+        "start": 34.86,
+        "end": 35.16
+      },
+      {
+        "word": "debt",
+        "start": 35.16,
+        "end": 35.48
       },
       {
         "word": "is",
-        "start": 51.52,
-        "end": 51.82
+        "start": 35.48,
+        "end": 35.76
       },
       {
-        "word": "being",
-        "start": 51.82,
-        "end": 52.12
-      },
-      {
-        "word": "redistributed",
-        "start": 52.12,
-        "end": 52.92
-      },
-      {
-        "word": "from",
-        "start": 52.92,
-        "end": 53.64
-      },
-      {
-        "word": "the",
-        "start": 53.64,
-        "end": 53.82
-      },
-      {
-        "word": "saver",
-        "start": 53.82,
-        "end": 54.2
-      },
-      {
-        "word": "to",
-        "start": 54.2,
-        "end": 54.64
-      },
-      {
-        "word": "the",
-        "start": 54.64,
-        "end": 54.8
-      },
-      {
-        "word": "spender.",
-        "start": 54.8,
-        "end": 55.3
-      },
-      {
-        "word": "The",
-        "start": 56.28,
-        "end": 56.74
-      },
-      {
-        "word": "risk",
-        "start": 56.74,
-        "end": 56.96
-      },
-      {
-        "word": "is",
-        "start": 56.96,
-        "end": 57.12
-      },
-      {
-        "word": "no",
-        "start": 57.12,
-        "end": 57.26
-      },
-      {
-        "word": "longer",
-        "start": 57.26,
-        "end": 57.58
+        "word": "now",
+        "start": 35.76,
+        "end": 36
       },
       {
         "word": "a",
-        "start": 57.58,
-        "end": 57.72
+        "start": 36,
+        "end": 36.2
       },
       {
-        "word": "crash.",
-        "start": 57.72,
-        "end": 58.24
-      },
-      {
-        "word": "It",
-        "start": 58.78,
-        "end": 58.92
-      },
-      {
-        "word": "is",
-        "start": 58.92,
-        "end": 59.02
-      },
-      {
-        "word": "a",
-        "start": 59.02,
-        "end": 59.14
-      },
-      {
-        "word": "slow,",
-        "start": 59.14,
-        "end": 59.54
-      },
-      {
-        "word": "hot",
-        "start": 59.88,
-        "end": 60.54
-      },
-      {
-        "word": "burn.",
-        "start": 60.54,
-        "end": 61.42
+        "word": "trap.",
+        "start": 36.2,
+        "end": 36.5
       }
     ]
   },
   {
     "id": 8,
-    "start": 62.92,
-    "end": 66.72,
+    "start": 37.3,
+    "end": 41.2,
+    "text": "Real assets win when the currency is devalued to fund deficits.",
+    "words": [
+      {
+        "word": "Real",
+        "start": 37.3,
+        "end": 37.64
+      },
+      {
+        "word": "assets",
+        "start": 37.64,
+        "end": 38.08
+      },
+      {
+        "word": "win",
+        "start": 38.08,
+        "end": 38.5
+      },
+      {
+        "word": "when",
+        "start": 38.5,
+        "end": 38.76
+      },
+      {
+        "word": "the",
+        "start": 38.76,
+        "end": 38.86
+      },
+      {
+        "word": "currency",
+        "start": 38.86,
+        "end": 39.28
+      },
+      {
+        "word": "is",
+        "start": 39.28,
+        "end": 39.58
+      },
+      {
+        "word": "devalued",
+        "start": 39.58,
+        "end": 40.28
+      },
+      {
+        "word": "to",
+        "start": 40.28,
+        "end": 40.38
+      },
+      {
+        "word": "fund",
+        "start": 40.38,
+        "end": 40.66
+      },
+      {
+        "word": "deficits.",
+        "start": 40.66,
+        "end": 41.2
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "start": 42.06,
+    "end": 45.12,
+    "text": "Wealth is being redistributed from the saver to the spender.",
+    "words": [
+      {
+        "word": "Wealth",
+        "start": 42.06,
+        "end": 42.42
+      },
+      {
+        "word": "is",
+        "start": 42.42,
+        "end": 42.58
+      },
+      {
+        "word": "being",
+        "start": 42.58,
+        "end": 42.8
+      },
+      {
+        "word": "redistributed",
+        "start": 42.8,
+        "end": 43.58
+      },
+      {
+        "word": "from",
+        "start": 43.58,
+        "end": 43.78
+      },
+      {
+        "word": "the",
+        "start": 43.78,
+        "end": 43.94
+      },
+      {
+        "word": "saver",
+        "start": 43.94,
+        "end": 44.28
+      },
+      {
+        "word": "to",
+        "start": 44.28,
+        "end": 44.6
+      },
+      {
+        "word": "the",
+        "start": 44.6,
+        "end": 44.72
+      },
+      {
+        "word": "spender.",
+        "start": 44.72,
+        "end": 45.12
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "start": 45.82,
+    "end": 49.58,
+    "text": "The risk is no longer a crash. It is a slow, hot burn.",
+    "words": [
+      {
+        "word": "The",
+        "start": 45.82,
+        "end": 46.06
+      },
+      {
+        "word": "risk",
+        "start": 46.06,
+        "end": 46.3
+      },
+      {
+        "word": "is",
+        "start": 46.3,
+        "end": 46.54
+      },
+      {
+        "word": "no",
+        "start": 46.54,
+        "end": 46.74
+      },
+      {
+        "word": "longer",
+        "start": 46.74,
+        "end": 47.12
+      },
+      {
+        "word": "a",
+        "start": 47.12,
+        "end": 47.28
+      },
+      {
+        "word": "crash.",
+        "start": 47.28,
+        "end": 47.64
+      },
+      {
+        "word": "It",
+        "start": 48.02,
+        "end": 48.1
+      },
+      {
+        "word": "is",
+        "start": 48.1,
+        "end": 48.2
+      },
+      {
+        "word": "a",
+        "start": 48.2,
+        "end": 48.3
+      },
+      {
+        "word": "slow,",
+        "start": 48.3,
+        "end": 48.64
+      },
+      {
+        "word": "hot",
+        "start": 48.92,
+        "end": 49.22
+      },
+      {
+        "word": "burn.",
+        "start": 49.22,
+        "end": 49.58
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "start": 50.36,
+    "end": 53.78,
     "text": "The printing press hasn't stopped. It just found a new operator.",
     "words": [
       {
         "word": "The",
-        "start": 62.92,
-        "end": 63.5
+        "start": 50.36,
+        "end": 50.56
       },
       {
         "word": "printing",
-        "start": 63.5,
-        "end": 63.76
+        "start": 50.56,
+        "end": 50.84
       },
       {
         "word": "press",
-        "start": 63.76,
-        "end": 64.04
+        "start": 50.84,
+        "end": 51.14
       },
       {
         "word": "hasn't",
-        "start": 64.04,
-        "end": 64.38
+        "start": 51.14,
+        "end": 51.52
       },
       {
         "word": "stopped.",
-        "start": 64.38,
-        "end": 64.76
+        "start": 51.52,
+        "end": 51.92
       },
       {
         "word": "It",
-        "start": 65.34,
-        "end": 65.56
+        "start": 52.22,
+        "end": 52.32
       },
       {
         "word": "just",
-        "start": 65.56,
-        "end": 65.72
+        "start": 52.32,
+        "end": 52.46
       },
       {
         "word": "found",
-        "start": 65.72,
-        "end": 66.0
+        "start": 52.46,
+        "end": 52.72
       },
       {
         "word": "a",
-        "start": 66.0,
-        "end": 66.16
+        "start": 52.72,
+        "end": 52.98
       },
       {
         "word": "new",
-        "start": 66.16,
-        "end": 66.32
+        "start": 52.98,
+        "end": 53.22
       },
       {
         "word": "operator.",
-        "start": 66.32,
-        "end": 66.72
+        "start": 53.22,
+        "end": 53.78
       }
     ]
   }
