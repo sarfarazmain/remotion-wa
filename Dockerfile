@@ -46,6 +46,11 @@ RUN python3 -m venv /app/.venv && \
     /app/.venv/bin/pip install --no-cache-dir --upgrade pip && \
     /app/.venv/bin/pip install --no-cache-dir -r /app/dashboard/requirements.txt
 
+# ── Whisper (for pipeline Stage 3 transcription) ────────────
+# openai-whisper provides the `whisper` CLI used by transcribe.ts.
+# Installed into the existing venv so it's found via PATH (/app/.venv/bin).
+RUN /app/.venv/bin/pip install --no-cache-dir openai-whisper
+
 ENV PATH="/app/.venv/bin:$PATH"
 
 # ── Copy project files ──────────────────────────────────────
