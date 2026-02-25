@@ -6,5 +6,16 @@ maxMessageSize = 500
 # Enable static file serving from the project directory
 enableStaticServing = true
 
+# Disable WS compression — Render's reverse proxy handles compression;
+# double-compression causes negotiation failures that drop the connection.
+enableWebsocketCompression = false
+
 [browser]
 gatherUsageStats = false
+
+[theme]
+primaryColor = "#C8A84E"
+backgroundColor = "#0A0E1A"
+secondaryBackgroundColor = "#141B2D"
+textColor = "#F5F0E1"
+font = "sans serif"
