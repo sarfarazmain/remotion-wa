@@ -38,7 +38,7 @@ WORKDIR /app
 
 # ── Node.js dependencies ────────────────────────────────────
 COPY package.json package-lock.json* ./
-RUN npm ci --prefer-offline 2>/dev/null || npm install
+RUN npm ci --prefer-offline 2>/dev/null || npm install --legacy-peer-deps
 
 # ── Python virtual environment ──────────────────────────────
 COPY dashboard/requirements.txt /app/dashboard/requirements.txt
