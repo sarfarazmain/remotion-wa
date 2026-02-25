@@ -1,6 +1,10 @@
 """
 Page 1: Topic Creator
-GPT-4o-mini generates the full topic.json from a topic idea.
+2-Stage LLM Pipeline:
+  Stage A: Claude Sonnet → Creative Brief (aesthetic reasoning)
+  Stage B: GPT-4o-mini → Structured Outputs JSON assembly
+  Stage C: Deterministic text fixes (18-char limits, budgets)
+Fallback: GPT-4o-mini single-model if Claude API unavailable.
 """
 
 import json
@@ -11,7 +15,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from utils.state import get_project_root, get_topic_json_path
-from utils.openai_llm import generate_topic, fix_topic
+from utils.openai_llm import generate_topic, fix_topic, assemble_from_brief
+from utils.claude_creative import generate_creative_brief
+from utils.text_fixer import fix_topic_text, validate_text_hard
 from utils.validator import validate_basic
 
 # Load API keys from .env in project root
@@ -20,16 +26,19 @@ load_dotenv(get_project_root() / ".env")
 st.title("Topic Creator")
 st.caption("Enter a topic idea and generate the full creative brief, or load an existing topic JSON.")
 
-# Load OpenAI API key from environment — no user input needed
-api_key = os.environ.get("OPENAI_API_KEY", "") or os.environ.get("PERPLEXITY_API_KEY", "")
-if not api_key:
+# Load API keys from environment
+openai_key = os.environ.get("OPENAI_API_KEY", "") or os.environ.get("PERPLEXITY_API_KEY", "")
+anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
+has_claude = bool(anthropic_key)
+
+if not openai_key:
     st.error("OPENAI_API_KEY not found in .env — check your environment setup.")
     st.stop()
 
 # --- Two modes: Generate or Load ---
 tab_generate, tab_upload, tab_paste = st.tabs(["Generate New", "Upload File", "Paste JSON"])
 
-# ── TAB 1: Generate via GPT-4o-mini ──────────────────────────────────
+# ── TAB 1: Generate ──────────────────────────────────────────────────
 with tab_generate:
     title = st.text_input(
         "Topic Title",
@@ -51,15 +60,97 @@ with tab_generate:
             index=0,
         )
 
-    if st.button("Generate with GPT-4o-mini", type="primary", use_container_width=True, disabled=not title):
+    # ── 2-Stage Pipeline (Claude + GPT-4o-mini) ─────────────────────
+    if has_claude:
+        if st.button(
+            "Generate with Claude + GPT-4o-mini",
+            type="primary",
+            use_container_width=True,
+            disabled=not title,
+            help="Stage A: Claude Sonnet creates the creative vision. Stage B: GPT-4o-mini compiles exact JSON.",
+        ):
+            try:
+                # Stage A: Claude creative brief
+                with st.status("Stage A: Claude Sonnet — Creative Direction...", expanded=True) as status:
+                    st.write("Generating scene rhythm, Pexels queries, BGM selection, heroWords...")
+                    brief = generate_creative_brief(
+                        title=title,
+                        archetype=archetype,
+                        guidance=guidance,
+                        api_key=anthropic_key,
+                    )
+                    st.session_state["creative_brief"] = brief
+                    scene_count = len(brief.get("scenes", []))
+                    bgm = brief.get("bgmTrackId", "unknown")
+                    st.write(f"Brief: {scene_count} scenes, BGM: `{bgm}`")
+                    status.update(label="Stage A complete", state="complete")
+
+                # Stage B: GPT-4o-mini assembly
+                with st.status("Stage B: GPT-4o-mini — JSON Assembly (Structured Outputs)...", expanded=True) as status:
+                    st.write("Compiling creative brief into schema-constrained topic.json...")
+                    topic = assemble_from_brief(
+                        brief=brief,
+                        title=title,
+                        archetype=archetype,
+                        api_key=openai_key,
+                    )
+                    status.update(label="Stage B complete", state="complete")
+
+                # Stage C: Deterministic text fixes
+                with st.status("Stage C: Text validation & auto-fix...", expanded=True) as status:
+                    topic, fixes = fix_topic_text(topic)
+                    hard_errors = validate_text_hard(topic)
+
+                    if fixes:
+                        st.write(f"Applied {len(fixes)} auto-fixes:")
+                        for f in fixes:
+                            st.write(f"  - {f}")
+                    else:
+                        st.write("No text fixes needed.")
+
+                    if hard_errors:
+                        status.update(label=f"Stage C: {len(hard_errors)} issues remain", state="error")
+                        for e in hard_errors:
+                            st.error(e)
+                    else:
+                        status.update(label="Stage C complete — all text valid", state="complete")
+
+                # Save to session
+                st.session_state["topic_json"] = topic
+                st.session_state["topic_title"] = topic.get("meta", {}).get("title", title)
+                st.session_state["topic_slug"] = topic.get("meta", {}).get("slug", "")
+                st.session_state["narration_text"] = topic.get("narration", "")
+                st.success("Topic generated via 2-stage pipeline!")
+                st.rerun()
+
+            except json.JSONDecodeError as e:
+                st.error(f"JSON parse error: {e}")
+            except Exception as e:
+                st.error(f"Generation failed: {e}")
+
+    # ── Fallback: GPT-4o-mini only ───────────────────────────────────
+    fallback_label = "Generate with GPT-4o-mini only" if has_claude else "Generate with GPT-4o-mini"
+    if st.button(
+        fallback_label,
+        type="secondary" if has_claude else "primary",
+        use_container_width=True,
+        disabled=not title,
+        help="Single-model fallback. Less creative but still functional." if has_claude else None,
+    ):
         with st.spinner("Generating topic.json via GPT-4o-mini..."):
             try:
                 topic = generate_topic(
                     title=title,
                     archetype=archetype,
                     guidance=guidance,
-                    api_key=api_key,
+                    api_key=openai_key,
                 )
+
+                # Still run deterministic text fixes
+                topic, fixes = fix_topic_text(topic)
+                if fixes:
+                    st.info(f"Applied {len(fixes)} auto-fixes to text.")
+
                 st.session_state["topic_json"] = topic
                 st.session_state["topic_title"] = topic.get("meta", {}).get("title", title)
                 st.session_state["topic_slug"] = topic.get("meta", {}).get("slug", "")
@@ -70,6 +161,9 @@ with tab_generate:
                 st.error(f"GPT-4o-mini returned invalid JSON: {e}")
             except Exception as e:
                 st.error(f"Generation failed: {e}")
+
+    if not has_claude:
+        st.caption("Set ANTHROPIC_API_KEY in .env to enable the 2-stage Claude + GPT-4o-mini pipeline.")
 
 # ── TAB 2: Upload file ─────────────────────────────────────────────
 with tab_upload:
@@ -389,7 +483,7 @@ if topic:
     st.divider()
     meta = topic.get("meta", {})
     st.subheader(meta.get("title", "Untitled Topic"))
-    st.caption(f"Slug: `{meta.get('slug', '—')}`  ·  Archetype: `{meta.get('archetype', '—')}`")
+    st.caption(f"Slug: `{meta.get('slug', '—')}`  ·  Archetype: `{meta.get('archetype', '—')}`  ·  BGM: `{topic.get('bgm', {}).get('trackId', '—')}`")
 
     # ── Validation ──────────────────────────────────────────────────
     errors = validate_basic(topic)
@@ -400,7 +494,8 @@ if topic:
             if st.button("Auto-fix with GPT-4o-mini"):
                 with st.spinner("Fixing..."):
                     try:
-                        fixed = fix_topic(topic, errors, api_key=api_key)
+                        fixed = fix_topic(topic, errors, api_key=openai_key)
+                        fixed, fixes = fix_topic_text(fixed)
                         st.session_state["topic_json"] = fixed
                         st.session_state["topic_slug"] = fixed.get("meta", {}).get("slug", "")
                         st.session_state["narration_text"] = fixed.get("narration", "")
@@ -409,6 +504,20 @@ if topic:
                         st.error(f"Fix failed: {e}")
     else:
         st.success("All validations passed!")
+
+    # ── Creative Brief (if available) ────────────────────────────────
+    brief = st.session_state.get("creative_brief")
+    if brief:
+        with st.expander("Claude Creative Brief"):
+            bgm_reason = brief.get("bgmReasoning", "")
+            if bgm_reason:
+                st.markdown(f"**BGM Reasoning:** {bgm_reason}")
+            for scene_brief in brief.get("scenes", []):
+                idx = scene_brief.get("index", "?")
+                hero = scene_brief.get("heroType", "")
+                beat = scene_brief.get("emotionalBeat", "")
+                reason = scene_brief.get("textReasoning", "")
+                st.markdown(f"**S{idx}** ({hero}) — _{beat}_ — {reason}")
 
     # ── Narration (copy-friendly) ───────────────────────────────────
     narration = topic.get("narration", "")
