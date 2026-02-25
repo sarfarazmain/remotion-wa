@@ -4,8 +4,15 @@ services:
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
+    # Production deploys ONLY from main.
+    # Develop on 'dev' branch, test with 'make dev', deploy with 'make promote'.
+    branch: main
+    autoDeploy: true
     envVars:
       - key: PEXELS_API_KEY
         sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
     healthCheckPath: /_stcore/health
-    autoDeploy: true
