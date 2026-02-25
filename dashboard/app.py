@@ -127,3 +127,13 @@ with st.sidebar:
 # ── Run navigation (hidden — our sidebar buttons handle nav) ─────────
 pg = st.navigation(pages, position="hidden")
 pg.run()
+
+# ── WebSocket keepalive ───────────────────────────────────────────────
+# Render's load balancer drops idle WS connections after ~55s.
+# This fragment re-runs every 25s, sending a delta packet that resets
+# the idle clock. Body is intentionally empty — the re-run is the fix.
+@st.fragment(run_every=25)
+def _keepalive():
+    pass
+
+_keepalive()
