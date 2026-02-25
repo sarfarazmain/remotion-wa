@@ -7,3 +7,9 @@ dist
 out
 
 build
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
