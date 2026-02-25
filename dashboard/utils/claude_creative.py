@@ -14,8 +14,6 @@ import json
 import os
 from pathlib import Path
 
-import anthropic
-
 MODEL = "claude-sonnet-4-20250514"
 
 # BGM catalogue (must match files in public/bgm/)
@@ -126,6 +124,8 @@ def generate_creative_brief(
     Call Claude Sonnet to generate a creative brief for the topic.
     Returns the parsed dict with scene plans, BGM selection, etc.
     """
+    import anthropic  # lazy import — only fails when actually called
+
     key = api_key or os.environ.get("ANTHROPIC_API_KEY", "")
     if not key:
         raise ValueError("ANTHROPIC_API_KEY not set")
